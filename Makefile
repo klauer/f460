@@ -4,7 +4,10 @@ include $(TOP)/configure/CONFIG
 DIRS := $(DIRS) $(filter-out $(DIRS), configure)
 
 # If StreamDevice is here, build it too
-if [ ! -d "StreamDevice" ]; then DIRS := $(DIRS) StreamDevice;  fi
+SD_DIR := $(firstword $(wildcard StreamDevice))
+ifneq (,$(SD_DIR))
+	DIRS := $(DIRS) StreamDevice
+endif
 
 DIRS := $(DIRS) $(filter-out $(DIRS), $(wildcard *App))
 DIRS := $(DIRS) $(filter-out $(DIRS), $(wildcard iocBoot))
