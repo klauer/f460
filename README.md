@@ -1,11 +1,11 @@
 F460 EPICS Driver
------------------
+=================
 
 StreamDevice-based EPICS support for the FMB Oxford F460 four-channel 
 fast current measurement device.
 
 Requirements
-============
+------------
 
 Though it may work on other versions, the driver was tested on these:
 
@@ -18,14 +18,14 @@ If included in $(TOP)/StreamDevice, it will be built automatically.
 The newer StreamDevice also requires a newer asyn (>= 4-18).
 
 Optional
-========
+--------
 
 1. CSS-NSLS2 download: http://cs-studio.sourceforge.net/nsls2/nsls2.html
    OPI screens are provided in $TOP/opi for CSS/BOY. 
    Import these into your css-workspace and set the macros appropriately.
 
 Installation
-============
+------------
 
 1. Install EPICS
     1. If using a Debian-based system (e.g., Ubuntu), use the packages here http://epics.nsls2.bnl.gov/debian/
