@@ -16,3 +16,13 @@
 *.exe
 *.out
 *.app
+
+# vi
+*.swp
+*.swo
+
+# Autosave files
+*.sav*
+
+# EPICS-related
+O.linux*
