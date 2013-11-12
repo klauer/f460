@@ -750,7 +750,7 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>97</y>
+    <y>90</y>
     <actions hook="false" hook_all="false" />
     <x>24</x>
     <tooltip></tooltip>
@@ -1032,7 +1032,7 @@ $(pv_value)</tooltip>
     <visible>true</visible>
     <wuid>4e624333:1420f1fd232:-7ce2</wuid>
     <scripts />
-    <height>23</height>
+    <height>25</height>
     <style>1</style>
     <name>Action Button</name>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
@@ -1051,7 +1051,7 @@ $(pv_value)</tooltip>
     <font>
       <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
     </font>
-    <width>239</width>
+    <width>181</width>
     <border_style>0</border_style>
     <push_action_index>0</push_action_index>
     <image></image>
@@ -1062,7 +1062,7 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <y>468</y>
+    <y>42</y>
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
         <pv_name>E1:F460:PID:READ</pv_name>
@@ -1074,7 +1074,7 @@ $(pv_value)</tooltip>
     </actions>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    <x>36</x>
+    <x>605</x>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
     <macros>
@@ -1228,7 +1228,9 @@ $(pv_value)</tooltip>
       <width>136</width>
       <border_style>3</border_style>
       <pv_value />
+      <maximum>Infinity</maximum>
       <border_width>1</border_width>
+      <minimum>-Infinity</minimum>
       <show_units>true</show_units>
       <wuid>4e624333:1420f1fd232:-5ce8</wuid>
       <rotation_angle>0.0</rotation_angle>
@@ -1250,7 +1252,7 @@ $(pv_value)</tooltip>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <confirm_message></confirm_message>
       <rules />
-      <limits_from_pv>true</limits_from_pv>
+      <limits_from_pv>false</limits_from_pv>
       <horizontal_alignment>0</horizontal_alignment>
       <border_color>
         <color red="0" green="128" blue="255" />
@@ -1414,7 +1416,9 @@ $(pv_value)</tooltip>
       <width>136</width>
       <border_style>3</border_style>
       <pv_value />
+      <maximum>Infinity</maximum>
       <border_width>1</border_width>
+      <minimum>-Infinity</minimum>
       <show_units>true</show_units>
       <wuid>4e624333:1420f1fd232:-5ce4</wuid>
       <rotation_angle>0.0</rotation_angle>
@@ -1436,7 +1440,7 @@ $(pv_value)</tooltip>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <confirm_message></confirm_message>
       <rules />
-      <limits_from_pv>true</limits_from_pv>
+      <limits_from_pv>false</limits_from_pv>
       <horizontal_alignment>0</horizontal_alignment>
       <border_color>
         <color red="0" green="128" blue="255" />
@@ -1600,7 +1604,9 @@ $(pv_value)</tooltip>
       <width>136</width>
       <border_style>3</border_style>
       <pv_value />
+      <maximum>Infinity</maximum>
       <border_width>1</border_width>
+      <minimum>-Infinity</minimum>
       <show_units>true</show_units>
       <wuid>4e624333:1420f1fd232:-5ce0</wuid>
       <rotation_angle>0.0</rotation_angle>
@@ -1622,7 +1628,7 @@ $(pv_value)</tooltip>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <confirm_message></confirm_message>
       <rules />
-      <limits_from_pv>true</limits_from_pv>
+      <limits_from_pv>false</limits_from_pv>
       <horizontal_alignment>0</horizontal_alignment>
       <border_color>
         <color red="0" green="128" blue="255" />
