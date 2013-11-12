@@ -22,7 +22,8 @@ Optional
 
 1. CSS-NSLS2 download: http://cs-studio.sourceforge.net/nsls2/nsls2.html
    OPI screens are provided in $TOP/opi for CSS/BOY. 
-   Import these into your css-workspace and set the macros appropriately.
+   Import these into your css-workspace and set the macros to match the
+   IOC settings.
 
 Installation
 ------------
@@ -36,21 +37,34 @@ Installation
 3. Edit iocBoot/iocf460/st.cmd
     1. Change the shebang on the top of the script if your architecture is different than linux-x86:
         #!../../bin/linux-x86/f460
-        (check if the environment variable EPICS_HOST_ARCH is set, or perhaps `uname -a`, or ask someone if
-         you don't know)
+        (check if the environment variable EPICS_HOST_ARCH is set, or perhaps `uname -a`, or 
+        after running `make` see what was built in $TOP/bin)
     2. The following line sets the prefix to all of your F460 PVs:
         epicsEnvSet("P", "E1:F460:")
-       Set the second quoted string appropriately.
+       Set the second quoted string appropriately according to your facility's naming standards.
     3. The following line sets the IP address of the serial device server communicating with the F460:
         drvAsynIPPortConfigure("$(PORT)", "10.0.0.11:4001")
        Change the 10.0.0.11 to the IP address, and 4001 to the correct port number.
     4. Alternatively, if you have the device directly connected to a serial port on the machine,
-       modify the drvAsynSerialPort* lines appropriately.
-4. Go to the top directory and `make`
+       uncomment and modify the drvAsynSerialPortConfigure and asynSetOption lines to, 
+       match the device's baud rate and other settings:
+       ```
+       drvAsynSerialPortConfigure("$(PORT)", "/dev/ttyS0")
+       asynSetOption("$(PORT)", 0, "baud", "115200")
+       asynSetOption("$(PORT)", 0, "bits", "8")
+       asynSetOption("$(PORT)", 0, "parity", "none")
+       asynSetOption("$(PORT)", 0, "stop", "1")
+       asynSetOption("$(PORT)", 0, "clocal", "Y")
+       asynSetOption("$(PORT)", 0, "crtscts", "N")
+       ```
+
+4. Go to the top directory and run `make`
 5. If all goes well:
 
-    `cd iocBoot/iocf460`  
-    `chmod +x st.cmd`  
-    `./st.cmd`  
+    ```
+    cd iocBoot/iocf460
+    chmod +x st.cmd
+    ./st.cmd
+    ```
 
 6. Run Control System Studio and open f460.opi.
