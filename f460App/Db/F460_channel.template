@@ -15,7 +15,8 @@ record(ai, "$(P)CH$(CH):OFF_IN") {
 record(ao, "$(P)CH$(CH):GAIN_OUT") {
   field(DESC, "Ch$(CH) gain setpoint")
   field(PREC, "$(PREC)")
-
+  
+  field(FLNK, "$(P)WRITE_COMP_")
   info(autosaveFields, "VAL")
 }
 
@@ -23,6 +24,7 @@ record(ao, "$(P)CH$(CH):OFF_OUT") {
   field(DESC, "Ch$(CH) offset setpoint")
   field(PREC, "$(PREC)")
 
+  field(FLNK, "$(P)WRITE_COMP_")
   info(autosaveFields, "VAL")
 }
 
@@ -111,12 +113,12 @@ record(bo, "$(P)CH$(CH):RD_MAX") {
 ## CONF:RANge chan range -- which number range to use
 record(mbbo, "$(P)CH$(CH):RANGE_OUT") {
   field(DTYP, "stream")
-  field(DESC, "Ch$(CH) position fcn")
+  field(DESC, "Ch$(CH) range")
   field(OUT, "@F460.protocol writeChInt($(P),CONF:RAN,$(CH)) $(PORT) 0")
-  field(ZRST, "Range 0")
-  field(ONST, "Range 1")
-  field(TWST, "Range 2")
-  field(THST, "Range 3")
+  field(ZRST, "Range 1")
+  field(ONST, "Range 2")
+  field(TWST, "Range 3")
+  field(THST, "Range 4")
   field(FLNK, "$(P)CH$(CH):RANGE_IN")
 
   info(autosaveFields, "VAL")
@@ -124,13 +126,13 @@ record(mbbo, "$(P)CH$(CH):RANGE_OUT") {
 
 record(mbbi, "$(P)CH$(CH):RANGE_IN") {
   field(DTYP, "stream")
-  field(DESC, "Ch$(CH) position fcn")
+  field(DESC, "Ch$(CH) range")
   field(SCAN, "Passive")
   field(PINI, "$(PINI)")
-  field(ZRST, "Range 0")
-  field(ONST, "Range 1")
-  field(TWST, "Range 2")
-  field(THST, "Range 3")
+  field(ZRST, "Range 1")
+  field(ONST, "Range 2")
+  field(TWST, "Range 3")
+  field(THST, "Range 4")
   field(INP, "@F460.protocol readChInt($(P),CONF:RAN,$(CH)) $(PORT) 0")
 }
 
