@@ -3,7 +3,6 @@
   <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
   <macros>
     <include_parent_macros>true</include_parent_macros>
-    <P>MLL:F460:</P>
   </macros>
   <wuid>7c32a782:1416f6861e0:d89</wuid>
   <boy_version>3.2.10.201310251012</boy_version>
@@ -185,7 +184,7 @@ $(pv_value)</tooltip>
     <format_type>2</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>true</transparent>
-    <pv_name>E1:F460:SEN:I0</pv_name>
+    <pv_name>$(P)SEN:I0</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -236,7 +235,7 @@ $(pv_value)</tooltip>
     <format_type>2</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>true</transparent>
-    <pv_name>E1:F460:SEN:I1</pv_name>
+    <pv_name>$(P)SEN:I1</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -287,7 +286,7 @@ $(pv_value)</tooltip>
     <format_type>2</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>true</transparent>
-    <pv_name>E1:F460:SEN:I2</pv_name>
+    <pv_name>$(P)SEN:I2</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -338,7 +337,7 @@ $(pv_value)</tooltip>
     <format_type>2</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>true</transparent>
-    <pv_name>E1:F460:SEN:I3</pv_name>
+    <pv_name>$(P)SEN:I3</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -389,7 +388,7 @@ $(pv_value)</tooltip>
     <format_type>2</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>true</transparent>
-    <pv_name>E1:F460:SEN:PER</pv_name>
+    <pv_name>$(P)SEN:PER</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -440,7 +439,7 @@ $(pv_value)</tooltip>
     <format_type>2</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>true</transparent>
-    <pv_name>E1:F460:SEN:TIME</pv_name>
+    <pv_name>$(P)SEN:TIME</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -491,7 +490,7 @@ $(pv_value)</tooltip>
     <format_type>0</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>true</transparent>
-    <pv_name>E1:F460:SEN:TRIG_CNT</pv_name>
+    <pv_name>$(P)SEN:TRIG_CNT</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -582,7 +581,7 @@ $(pv_value)</tooltip>
     <format_type>2</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>true</transparent>
-    <pv_name>E1:F460:CUR:I2</pv_name>
+    <pv_name>$(P)CUR:I2</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -633,7 +632,7 @@ $(pv_value)</tooltip>
     <format_type>2</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>true</transparent>
-    <pv_name>E1:F460:CUR:I1</pv_name>
+    <pv_name>$(P)CUR:I1</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -684,7 +683,7 @@ $(pv_value)</tooltip>
     <format_type>2</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>true</transparent>
-    <pv_name>E1:F460:CUR:I3</pv_name>
+    <pv_name>$(P)CUR:I3</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -735,7 +734,7 @@ $(pv_value)</tooltip>
     <format_type>2</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>true</transparent>
-    <pv_name>E1:F460:CUR:PER</pv_name>
+    <pv_name>$(P)CUR:PER</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -786,7 +785,7 @@ $(pv_value)</tooltip>
     <format_type>2</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>false</transparent>
-    <pv_name>E1:F460:CUR:I0</pv_name>
+    <pv_name>$(P)CUR:I0</pv_name>
     <background_color>
       <color name="GlobalBG" red="240" green="240" blue="240" />
     </background_color>
@@ -837,7 +836,7 @@ $(pv_value)</tooltip>
     <format_type>2</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>true</transparent>
-    <pv_name>E1:F460:CUR:TIME</pv_name>
+    <pv_name>$(P)CUR:TIME</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -888,7 +887,7 @@ $(pv_value)</tooltip>
     <format_type>0</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>true</transparent>
-    <pv_name>E1:F460:CUR:TRIG_CNT</pv_name>
+    <pv_name>$(P)CUR:TRIG_CNT</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -979,7 +978,7 @@ $(pv_value)</tooltip>
     <format_type>2</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>true</transparent>
-    <pv_name>E1:F460:ANA:AI1</pv_name>
+    <pv_name>$(P)ANA:AI1</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -1030,7 +1029,7 @@ $(pv_value)</tooltip>
     <format_type>2</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>true</transparent>
-    <pv_name>E1:F460:ANA:AI2</pv_name>
+    <pv_name>$(P)ANA:AI2</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -1081,7 +1080,7 @@ $(pv_value)</tooltip>
     <format_type>2</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>true</transparent>
-    <pv_name>E1:F460:ANA:PER</pv_name>
+    <pv_name>$(P)ANA:PER</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -1132,7 +1131,7 @@ $(pv_value)</tooltip>
     <format_type>2</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>true</transparent>
-    <pv_name>E1:F460:ANA:TIME</pv_name>
+    <pv_name>$(P)ANA:TIME</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -1183,7 +1182,7 @@ $(pv_value)</tooltip>
     <format_type>0</format_type>
     <precision_from_pv>true</precision_from_pv>
     <transparent>true</transparent>
-    <pv_name>E1:F460:ANA:TRIG_CNT</pv_name>
+    <pv_name>$(P)ANA:TRIG_CNT</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>

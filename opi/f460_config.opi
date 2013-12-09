@@ -3,7 +3,6 @@
   <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
   <macros>
     <include_parent_macros>true</include_parent_macros>
-    <P>MLL:F460:</P>
   </macros>
   <wuid>7c32a782:1416f6861e0:d89</wuid>
   <boy_version>3.2.10.201310251012</boy_version>
@@ -361,7 +360,7 @@ $(pv_value)</tooltip>
           <format_type>0</format_type>
           <precision_from_pv>true</precision_from_pv>
           <transparent>true</transparent>
-          <pv_name>E1:F460:LOG_IP_IN</pv_name>
+          <pv_name>$(P)LOG_IP_IN</pv_name>
           <background_color>
             <color red="255" green="255" blue="255" />
           </background_color>
@@ -429,7 +428,7 @@ $(pv_value)</tooltip>
           </scale_options>
           <selector_type>0</selector_type>
           <transparent>false</transparent>
-          <pv_name>E1:F460:LOG_IP_OUT</pv_name>
+          <pv_name>$(P)LOG_IP_OUT</pv_name>
           <foreground_color>
             <color red="0" green="0" blue="0" />
           </foreground_color>
@@ -549,7 +548,7 @@ $(pv_value)</tooltip>
           <format_type>0</format_type>
           <precision_from_pv>true</precision_from_pv>
           <transparent>true</transparent>
-          <pv_name>E1:F460:GATE_IN</pv_name>
+          <pv_name>$(P)GATE_IN</pv_name>
           <background_color>
             <color red="255" green="255" blue="255" />
           </background_color>
@@ -617,7 +616,7 @@ $(pv_value)</tooltip>
           </scale_options>
           <selector_type>0</selector_type>
           <transparent>false</transparent>
-          <pv_name>E1:F460:GATE_OUT</pv_name>
+          <pv_name>$(P)GATE_OUT</pv_name>
           <foreground_color>
             <color red="0" green="0" blue="0" />
           </foreground_color>
@@ -737,7 +736,7 @@ $(pv_value)</tooltip>
           <format_type>0</format_type>
           <precision_from_pv>true</precision_from_pv>
           <transparent>true</transparent>
-          <pv_name>E1:F460:NETMASK_IN</pv_name>
+          <pv_name>$(P)NETMASK_IN</pv_name>
           <background_color>
             <color red="255" green="255" blue="255" />
           </background_color>
@@ -805,7 +804,7 @@ $(pv_value)</tooltip>
           </scale_options>
           <selector_type>0</selector_type>
           <transparent>false</transparent>
-          <pv_name>E1:F460:NETMASK_OUT</pv_name>
+          <pv_name>$(P)NETMASK_OUT</pv_name>
           <foreground_color>
             <color red="0" green="0" blue="0" />
           </foreground_color>
@@ -925,7 +924,7 @@ $(pv_value)</tooltip>
           <format_type>0</format_type>
           <precision_from_pv>true</precision_from_pv>
           <transparent>true</transparent>
-          <pv_name>E1:F460:IP_IN</pv_name>
+          <pv_name>$(P)IP_IN</pv_name>
           <background_color>
             <color red="255" green="255" blue="255" />
           </background_color>
@@ -993,7 +992,7 @@ $(pv_value)</tooltip>
           </scale_options>
           <selector_type>0</selector_type>
           <transparent>false</transparent>
-          <pv_name>E1:F460:IP_OUT</pv_name>
+          <pv_name>$(P)IP_OUT</pv_name>
           <foreground_color>
             <color red="0" green="0" blue="0" />
           </foreground_color>
@@ -1113,7 +1112,7 @@ $(pv_value)</tooltip>
           <format_type>0</format_type>
           <precision_from_pv>true</precision_from_pv>
           <transparent>true</transparent>
-          <pv_name>E1:F460:IPMODE_IN</pv_name>
+          <pv_name>$(P)IPMODE_IN</pv_name>
           <background_color>
             <color red="255" green="255" blue="255" />
           </background_color>
@@ -1157,7 +1156,7 @@ $(pv_value)</tooltip>
             <height_scalable>true</height_scalable>
             <keep_wh_ratio>false</keep_wh_ratio>
           </scale_options>
-          <pv_name>E1:F460:IPMODE_OUT</pv_name>
+          <pv_name>$(P)IPMODE_OUT</pv_name>
           <background_color>
             <color red="255" green="255" blue="255" />
           </background_color>
@@ -1377,7 +1376,7 @@ $(pv_value)</tooltip>
           <format_type>0</format_type>
           <precision_from_pv>true</precision_from_pv>
           <transparent>true</transparent>
-          <pv_name>E1:F460:MODEL</pv_name>
+          <pv_name>$(P)MODEL</pv_name>
           <background_color>
             <color red="255" green="255" blue="255" />
           </background_color>
@@ -1509,7 +1508,7 @@ $(pv_value)</tooltip>
           <format_type>0</format_type>
           <precision_from_pv>true</precision_from_pv>
           <transparent>true</transparent>
-          <pv_name>E1:F460:FIRMWARE</pv_name>
+          <pv_name>$(P)FIRMWARE</pv_name>
           <background_color>
             <color red="255" green="255" blue="255" />
           </background_color>
@@ -1641,7 +1640,7 @@ $(pv_value)</tooltip>
           <format_type>0</format_type>
           <precision_from_pv>true</precision_from_pv>
           <transparent>true</transparent>
-          <pv_name>E1:F460:SERIAL</pv_name>
+          <pv_name>$(P)SERIAL</pv_name>
           <background_color>
             <color red="255" green="255" blue="255" />
           </background_color>
@@ -1815,7 +1814,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>true</transparent>
-        <pv_name>E1:F460:ERROR_CODE</pv_name>
+        <pv_name>$(P)ERROR_CODE</pv_name>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
@@ -1866,7 +1865,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>true</transparent>
-        <pv_name>E1:F460:ERROR_DESC</pv_name>
+        <pv_name>$(P)ERROR_DESC</pv_name>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
@@ -1998,7 +1997,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>true</transparent>
-        <pv_name>E1:F460:ERR_COUNT_IN</pv_name>
+        <pv_name>$(P)ERR_COUNT_IN</pv_name>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
@@ -2067,7 +2066,7 @@ $(pv_value)</tooltip>
         <y>1</y>
         <actions hook="false" hook_all="false">
           <action type="WRITE_PV">
-            <pv_name>E1:F460:ACK_ERR</pv_name>
+            <pv_name>$(P)ACK_ERR</pv_name>
             <value>1</value>
             <timeout>10</timeout>
             <confirm_message></confirm_message>
@@ -2180,7 +2179,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>E1:F460:TIMEOUT_IN</pv_name>
+      <pv_name>$(P)TIMEOUT_IN</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -2248,7 +2247,7 @@ $(pv_value)</tooltip>
       </scale_options>
       <selector_type>0</selector_type>
       <transparent>false</transparent>
-      <pv_name>E1:F460:TIMEOUT_OUT</pv_name>
+      <pv_name>$(P)TIMEOUT_OUT</pv_name>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
@@ -2306,7 +2305,7 @@ $(pv_value)</tooltip>
     <y>78</y>
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
-        <pv_name>E1:F460:EXECUTE_SAVE</pv_name>
+        <pv_name>$(P)EXECUTE_SAVE</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
@@ -2355,7 +2354,7 @@ $(pv_value)</tooltip>
     <y>48</y>
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
-        <pv_name>E1:F460:EXECUTE_RESET</pv_name>
+        <pv_name>$(P)EXECUTE_RESET</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
@@ -2404,7 +2403,7 @@ $(pv_value)</tooltip>
     <y>108</y>
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
-        <pv_name>E1:F460:EXECUTE_RECALL</pv_name>
+        <pv_name>$(P)EXECUTE_RECALL</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>

@@ -3,7 +3,6 @@
   <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
   <macros>
     <include_parent_macros>true</include_parent_macros>
-    <P>MLL:F460:</P>
   </macros>
   <wuid>7c32a782:1416f6861e0:d89</wuid>
   <boy_version>3.2.10.201310251012</boy_version>
@@ -272,7 +271,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>E1:F460:TRIG_MODE_IN</pv_name>
+      <pv_name>$(P)TRIG_MODE_IN</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -316,7 +315,7 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>E1:F460:TRIG_MODE_OUT</pv_name>
+      <pv_name>$(P)TRIG_MODE_OUT</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -445,7 +444,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>E1:F460:TRIG_PAUSE_IN</pv_name>
+      <pv_name>$(P)TRIG_PAUSE_IN</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -489,7 +488,7 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>E1:F460:TRIG_PAUSE_OUT</pv_name>
+      <pv_name>$(P)TRIG_PAUSE_OUT</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -618,7 +617,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>E1:F460:TRIG_START_IN</pv_name>
+      <pv_name>$(P)TRIG_START_IN</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -662,7 +661,7 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>E1:F460:TRIG_START_OUT</pv_name>
+      <pv_name>$(P)TRIG_START_OUT</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -791,7 +790,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>E1:F460:TRIG_STOP_IN</pv_name>
+      <pv_name>$(P)TRIG_STOP_IN</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -835,7 +834,7 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>E1:F460:TRIG_STOP_OUT</pv_name>
+      <pv_name>$(P)TRIG_STOP_OUT</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -964,7 +963,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>E1:F460:ANA:TRIG_CNT</pv_name>
+      <pv_name>$(P)ANA:TRIG_CNT</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -1096,7 +1095,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>E1:F460:CUR:TRIG_CNT</pv_name>
+      <pv_name>$(P)CUR:TRIG_CNT</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -1228,7 +1227,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>E1:F460:BUF_SZ_IN</pv_name>
+      <pv_name>$(P)BUF_SZ_IN</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -1296,7 +1295,7 @@ $(pv_value)</tooltip>
       </scale_options>
       <selector_type>0</selector_type>
       <transparent>false</transparent>
-      <pv_name>E1:F460:BUF_SZ_OUT</pv_name>
+      <pv_name>$(P)BUF_SZ_OUT</pv_name>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
@@ -1416,7 +1415,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>E1:F460:BURST_IN</pv_name>
+      <pv_name>$(P)BURST_IN</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -1484,7 +1483,7 @@ $(pv_value)</tooltip>
       </scale_options>
       <selector_type>0</selector_type>
       <transparent>false</transparent>
-      <pv_name>E1:F460:BURST_OUT</pv_name>
+      <pv_name>$(P)BURST_OUT</pv_name>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
@@ -1604,7 +1603,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>E1:F460:SEN:TRIG_CNT</pv_name>
+      <pv_name>$(P)SEN:TRIG_CNT</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -1736,7 +1735,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>E1:F460:TRIG_POL_IN</pv_name>
+      <pv_name>$(P)TRIG_POL_IN</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -1780,7 +1779,7 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>E1:F460:TRIG_POL_OUT</pv_name>
+      <pv_name>$(P)TRIG_POL_OUT</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -1847,7 +1846,7 @@ $(pv_value)</tooltip>
     <y>36</y>
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
-        <pv_name>E1:F460:EXECUTE_INIT</pv_name>
+        <pv_name>$(P)EXECUTE_INIT</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
@@ -1958,7 +1957,7 @@ $(pv_value)</tooltip>
       <format_type>2</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>E1:F460:PER_IN</pv_name>
+      <pv_name>$(P)PER_IN</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -2026,7 +2025,7 @@ $(pv_value)</tooltip>
       </scale_options>
       <selector_type>0</selector_type>
       <transparent>false</transparent>
-      <pv_name>E1:F460:PER_OUT</pv_name>
+      <pv_name>$(P)PER_OUT</pv_name>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
@@ -2146,7 +2145,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>E1:F460:FREQ_IN</pv_name>
+      <pv_name>$(P)FREQ_IN</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -2190,7 +2189,7 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>E1:F460:FREQ_OUT</pv_name>
+      <pv_name>$(P)FREQ_OUT</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -2319,7 +2318,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>E1:F460:MON_IN</pv_name>
+      <pv_name>$(P)MON_IN</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -2363,7 +2362,7 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>E1:F460:MON_OUT</pv_name>
+      <pv_name>$(P)MON_OUT</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -2405,7 +2404,7 @@ $(pv_value)</tooltip>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <pv_name>E1:F460:READ_CUR.SCAN</pv_name>
+    <pv_name>$(P)READ_CUR.SCAN</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -2446,7 +2445,7 @@ $(pv_value)</tooltip>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <pv_name>E1:F460:READ_SEN.SCAN</pv_name>
+    <pv_name>$(P)READ_SEN.SCAN</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -2487,7 +2486,7 @@ $(pv_value)</tooltip>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <pv_name>E1:F460:READ_ANA.SCAN</pv_name>
+    <pv_name>$(P)READ_ANA.SCAN</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>

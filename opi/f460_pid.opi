@@ -3,7 +3,6 @@
   <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
   <macros>
     <include_parent_macros>true</include_parent_macros>
-    <P>MLL:F460:</P>
   </macros>
   <wuid>7c32a782:1416f6861e0:d89</wuid>
   <boy_version>3.2.10.201310251012</boy_version>
@@ -274,7 +273,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color red="0" green="100" blue="0" />
       </off_color>
-      <pv_name>E1:F460:PID:HI_DAC_IN</pv_name>
+      <pv_name>$(P)PID:HI_DAC_IN</pv_name>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
@@ -408,7 +407,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color red="0" green="100" blue="0" />
       </off_color>
-      <pv_name>E1:F460:PID:LOW_DAC_IN</pv_name>
+      <pv_name>$(P)PID:LOW_DAC_IN</pv_name>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
@@ -542,7 +541,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color red="0" green="100" blue="0" />
       </off_color>
-      <pv_name>E1:F460:PID:LOW_I_IN</pv_name>
+      <pv_name>$(P)PID:LOW_I_IN</pv_name>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
@@ -636,7 +635,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color red="0" green="100" blue="0" />
       </off_color>
-      <pv_name>E1:F460:PID:ENABLE_IN</pv_name>
+      <pv_name>$(P)PID:ENABLE_IN</pv_name>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
@@ -681,7 +680,7 @@ $(pv_value)</tooltip>
         <height_scalable>false</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>E1:F460:PID:ENABLE_OUT</pv_name>
+      <pv_name>$(P)PID:ENABLE_OUT</pv_name>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
@@ -776,7 +775,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color red="0" green="100" blue="0" />
       </off_color>
-      <pv_name>E1:F460:PID:PROF_IN</pv_name>
+      <pv_name>$(P)PID:PROF_IN</pv_name>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
@@ -821,7 +820,7 @@ $(pv_value)</tooltip>
         <height_scalable>false</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>E1:F460:PID:PROF_OUT</pv_name>
+      <pv_name>$(P)PID:PROF_OUT</pv_name>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
@@ -954,7 +953,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>E1:F460:PID:MODE_IN</pv_name>
+      <pv_name>$(P)PID:MODE_IN</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -998,7 +997,7 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>E1:F460:PID:MODE_OUT</pv_name>
+      <pv_name>$(P)PID:MODE_OUT</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -1065,7 +1064,7 @@ $(pv_value)</tooltip>
     <y>42</y>
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
-        <pv_name>E1:F460:PID:READ</pv_name>
+        <pv_name>$(P)PID:READ</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
@@ -1176,7 +1175,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>E1:F460:PID:DACHI_IN</pv_name>
+      <pv_name>$(P)PID:DACHI_IN</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -1244,7 +1243,7 @@ $(pv_value)</tooltip>
       </scale_options>
       <selector_type>0</selector_type>
       <transparent>false</transparent>
-      <pv_name>E1:F460:PID:DACHI_OUT</pv_name>
+      <pv_name>$(P)PID:DACHI_OUT</pv_name>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
@@ -1364,7 +1363,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>E1:F460:PID:DACLO_IN</pv_name>
+      <pv_name>$(P)PID:DACLO_IN</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -1432,7 +1431,7 @@ $(pv_value)</tooltip>
       </scale_options>
       <selector_type>0</selector_type>
       <transparent>false</transparent>
-      <pv_name>E1:F460:PID:DACLO_OUT</pv_name>
+      <pv_name>$(P)PID:DACLO_OUT</pv_name>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
@@ -1552,7 +1551,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>E1:F460:PID:NPT_IN</pv_name>
+      <pv_name>$(P)PID:NPT_IN</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -1620,7 +1619,7 @@ $(pv_value)</tooltip>
       </scale_options>
       <selector_type>0</selector_type>
       <transparent>false</transparent>
-      <pv_name>E1:F460:PID:NPT_OUT</pv_name>
+      <pv_name>$(P)PID:NPT_OUT</pv_name>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
@@ -1780,7 +1779,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>true</transparent>
-        <pv_name>E1:F460:PID:AN1_IN</pv_name>
+        <pv_name>$(P)PID:AN1_IN</pv_name>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
@@ -1912,7 +1911,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>true</transparent>
-        <pv_name>E1:F460:PID:FOL_ERR_IN</pv_name>
+        <pv_name>$(P)PID:FOL_ERR_IN</pv_name>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
@@ -2044,7 +2043,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>true</transparent>
-        <pv_name>E1:F460:PID:INIT_V_IN</pv_name>
+        <pv_name>$(P)PID:INIT_V_IN</pv_name>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
@@ -2176,7 +2175,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>true</transparent>
-        <pv_name>E1:F460:PID:PROC:DIFF_IN</pv_name>
+        <pv_name>$(P)PID:PROC:DIFF_IN</pv_name>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
@@ -2308,7 +2307,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>true</transparent>
-        <pv_name>E1:F460:PID:PROC:MEAS_IN</pv_name>
+        <pv_name>$(P)PID:PROC:MEAS_IN</pv_name>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
@@ -2440,7 +2439,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>true</transparent>
-        <pv_name>E1:F460:PID:PROC:TGT_IN</pv_name>
+        <pv_name>$(P)PID:PROC:TGT_IN</pv_name>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
@@ -2572,7 +2571,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>true</transparent>
-        <pv_name>E1:F460:PID:TS_IN</pv_name>
+        <pv_name>$(P)PID:TS_IN</pv_name>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
@@ -2704,7 +2703,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>true</transparent>
-        <pv_name>E1:F460:PID:TS_NUM_IN</pv_name>
+        <pv_name>$(P)PID:TS_NUM_IN</pv_name>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
@@ -2836,7 +2835,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>true</transparent>
-        <pv_name>E1:F460:PID:VOLTS_IN</pv_name>
+        <pv_name>$(P)PID:VOLTS_IN</pv_name>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
