@@ -23,6 +23,7 @@ f460_DBD += drvAsynSerialPort.dbd
 f460_DBD += calcSupport.dbd
 f460_DBD += asSupport.dbd
 f460_DBD += calcoutRecord.dbd
+f460_DBD += system.dbd
 
 # Add all the support libraries needed by this IOC
 f460_LIBS += calc sscan stream asyn autosave

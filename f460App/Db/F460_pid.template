@@ -58,7 +58,7 @@ record(mbbo, "$(Sys)$(Dev)Pid:Mode-SP") {
   field(TTST, "Profile Y")
   field(FTST, "Profile I1+I2+I3+I4")
 
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(mbbi, "$(Sys)$(Dev)Pid:Mode-I") {
@@ -133,7 +133,7 @@ record(ao, "$(Sys)$(Dev)Pid:Lo-SP") {
   field(DRVH, "10.0")
   field(DRVL, "-10.0")
   field(FLNK, "$(Sys)$(Dev)Pid:Cmd:Lim")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(ao, "$(Sys)$(Dev)Pid:Hi-SP") {
@@ -144,7 +144,7 @@ record(ao, "$(Sys)$(Dev)Pid:Hi-SP") {
   field(DRVH, "10.0")
   field(DRVL, "-10.0")
   field(FLNK, "$(Sys)$(Dev)Pid:Cmd:Lim")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(calcout, "$(Sys)$(Dev)Pid:Cmd:Lim") {
@@ -155,7 +155,7 @@ record(calcout, "$(Sys)$(Dev)Pid:Cmd:Lim") {
   field(INPB, "$(Sys)$(Dev)Pid:Hi-SP")
   field(OUT, "@F460.protocol setLimit($(Sys)$(Dev),PID,CONF:PID:LIM) $(PORT) 0")
   field(FLNK, "$(Sys)$(Dev)Pid:Lo-I")
-  info(autosaveFields, "VAL A B")
+  info(autosaveFields_pass0, "VAL A B")
 }
 
 # CONF:PID:ILOW {SigI}
@@ -179,7 +179,7 @@ record(ao, "$(Sys)$(Dev)Pid:Sig-SP") {
   field(OUT, "@F460.protocol writeFloat($(Sys)$(Dev),CONF:PID:ILOW) $(PORT) 0")
   field(EGU, "A")
   field(FLNK, "$(Sys)$(Dev)Pid:Sig-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 # CONF:PID:KP {Prop}
@@ -202,7 +202,7 @@ record(ao, "$(Sys)$(Dev)Pid:Kp-SP") {
   field(OUT, "@F460.protocol writeFloat($(Sys)$(Dev),CONF:PID:KP) $(PORT) 0")
   field(FLNK, "$(Sys)$(Dev)Pid:Kp-I")
   field(TPRO, 1)
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 # CONF:PID:KI {Prop}
@@ -222,7 +222,7 @@ record(ao, "$(Sys)$(Dev)Pid:Ki-SP") {
   field(SCAN, "Passive")
   field(OUT, "@F460.protocol writeFloat($(Sys)$(Dev),CONF:PID:KI) $(PORT) 0")
   field(FLNK, "$(Sys)$(Dev)Pid:Ki-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 # CONF:PID:REF
@@ -243,7 +243,7 @@ record(ao, "$(Sys)$(Dev)Pid:Ref-SP") {
   field(SCAN, "Passive")
   field(OUT, "@F460.protocol writeFloat($(Sys)$(Dev),CONF:PID:REF) $(PORT) 0")
   field(FLNK, "$(Sys)$(Dev)Pid:Ref-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 # CONF:PID:PROF:LIMit LO, HI, NumPts
@@ -281,7 +281,7 @@ record(ao, "$(Sys)$(Dev)Pid:DacLo-SP") {
   field(DRVH, "10.0")
   field(DRVL, "-10.0")
   field(FLNK, "$(Sys)$(Dev)Pid:WrDaclim")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(ao, "$(Sys)$(Dev)Pid:DacHi-SP") {
@@ -292,14 +292,14 @@ record(ao, "$(Sys)$(Dev)Pid:DacHi-SP") {
   field(DRVH, "10.0")
   field(DRVL, "-10.0")
   field(FLNK, "$(Sys)$(Dev)Pid:WrDaclim")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(longout, "$(Sys)$(Dev)Pid:Npt-SP") {
   field(DESC, "Profile points")
   field(DTYP, "Soft Channel")
   field(FLNK, "$(Sys)$(Dev)Pid:WrDaclim")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(calcout, "$(Sys)$(Dev)Pid:WrDaclim") {
@@ -310,7 +310,7 @@ record(calcout, "$(Sys)$(Dev)Pid:WrDaclim") {
   field(INPB, "$(Sys)$(Dev)Pid:DacHi-SP")
   field(OUT, "@F460.protocol setProfLimit($(Sys)$(Dev),PID) $(PORT) 0")
   field(FLNK, "$(Sys)$(Dev)Pid:DacLo-I")
-  info(autosaveFields, "VAL A B")
+  info(autosaveFields_pass0, "VAL A B")
 }
 
 ## PID:PROFile pidno 0|1
@@ -327,7 +327,7 @@ record(bo, "$(Sys)$(Dev)Pid:Prof-SP") {
   field(ZNAM, "Profile off")
   field(ONAM, "Profile on")
   field(FLNK, "$(Sys)$(Dev)Pid:Prof-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(bi, "$(Sys)$(Dev)Pid:Prof-I") {
@@ -361,7 +361,7 @@ record(ao, "$(Sys)$(Dev)Pid:Rate-SP") {
   field(EGU, "sec")
   field(DRVL, "5e-4")
   field(FLNK, "$(Sys)$(Dev)Pid:Rate-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 
@@ -378,7 +378,7 @@ record(bo, "$(Sys)$(Dev)Pid:Enable-Out") {
   field(ZNAM, "PID off")
   field(ONAM, "PID on")
   field(FLNK, "$(Sys)$(Dev)Pid:Enable-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(bi, "$(Sys)$(Dev)Pid:Enable-I") {

@@ -15,9 +15,9 @@ record(ai, "$(Sys)$(Dev)Ch$(CH):Off-I") {
 record(ao, "$(Sys)$(Dev)Ch$(CH):Gain-SP") {
   field(DESC, "Ch$(CH) gain setpoint")
   field(PREC, "$(PREC)")
-  
+
   field(FLNK, "$(Sys)$(Dev)DB:WrtComp_")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(ao, "$(Sys)$(Dev)Ch$(CH):Off-SP") {
@@ -25,7 +25,7 @@ record(ao, "$(Sys)$(Dev)Ch$(CH):Off-SP") {
   field(PREC, "$(PREC)")
 
   field(FLNK, "$(Sys)$(Dev)DB:WrtComp_")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(bo, "$(Sys)$(Dev)Ch$(CH):RdComp") {
@@ -120,8 +120,8 @@ record(mbbo, "$(Sys)$(Dev)Ch$(CH):Range-SP") {
   field(TWST, "Range 3")
   field(THST, "Range 4")
   field(FLNK, "$(Sys)$(Dev)Ch$(CH):Range-I")
-
-  info(autosaveFields, "VAL")
+  
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(mbbi, "$(Sys)$(Dev)Ch$(CH):Range-I") {
@@ -150,7 +150,7 @@ record(ao, "$(Sys)$(Dev)Ch$(CH):Ana-SP") {
   field(DRVL, "-10.0")
   field(FLNK, "$(Sys)$(Dev)Ch$(CH):Ana-I")
   field(PREC, "$(PREC)")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(ai, "$(Sys)$(Dev)Ch$(CH):Ana-I") {

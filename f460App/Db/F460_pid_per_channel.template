@@ -59,7 +59,7 @@ record(mbbo, "$(Sys)$(Dev)Pid$(PID):Mode-Out") {
   field(FTST, "Profile I1+I2+I3+I4")
 
   field(FLNK, "$(Sys)$(Dev)Pid:Cmd:Mode")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(mbbi, "$(Sys)$(Dev)Pid$(PID):Mode-I") {
@@ -134,7 +134,7 @@ record(ao, "$(Sys)$(Dev)Pid$(PID):Lo-SP") {
   field(DRVH, "10.0")
   field(DRVL, "-10.0")
   field(FLNK, "$(Sys)$(Dev)Pid$(PID):Cmd:Lim")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(ao, "$(Sys)$(Dev)Pid$(PID):Hi-SP") {
@@ -145,7 +145,7 @@ record(ao, "$(Sys)$(Dev)Pid$(PID):Hi-SP") {
   field(DRVH, "10.0")
   field(DRVL, "-10.0")
   field(FLNK, "$(Sys)$(Dev)Pid$(PID):Cmd:Lim")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(calcout, "$(Sys)$(Dev)Pid$(PID):Cmd:Lim") {
@@ -156,7 +156,7 @@ record(calcout, "$(Sys)$(Dev)Pid$(PID):Cmd:Lim") {
   field(INPB, "$(Sys)$(Dev)Pid$(PID):Hi-SP")
   field(OUT, "@F460.protocol setLimit($(Sys)$(Dev),Pid$(PID),$(PID),CONF:PID:LIM) $(PORT) 0")
   field(FLNK, "$(Sys)$(Dev)Pid$(PID):Lo-I")
-  info(autosaveFields, "VAL A B")
+  info(autosaveFields_pass0, "VAL A B")
 }
 
 # CONF:PID:SIGilow {PIDNo, SigI}
@@ -180,7 +180,7 @@ record(ao, "$(Sys)$(Dev)Pid$(PID):Sig-SP") {
   field(OUT, "@F460.protocol writeChFloat($(Sys)$(Dev),CONF:PID:SIG,$(PID)) $(PORT) 0")
   field(EGU, "A")
   field(FLNK, "$(Sys)$(Dev)Pid$(PID):Sig-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 # CONF:PID:KP {PIDNo, Prop}
@@ -203,7 +203,7 @@ record(ao, "$(Sys)$(Dev)Pid$(PID):Kp-SP") {
   field(OUT, "@F460.protocol writeChFloat($(Sys)$(Dev),CONF:PID:KP,$(PID)) $(PORT) 0")
   field(FLNK, "$(Sys)$(Dev)Pid$(PID):Kp-I")
   field(TPRO, 1)
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 # CONF:PID:KI {PIDNo, Prop}
@@ -223,7 +223,7 @@ record(ao, "$(Sys)$(Dev)Pid$(PID):Ki-SP") {
   field(SCAN, "Passive")
   field(OUT, "@F460.protocol writeChFloat($(Sys)$(Dev),CONF:PID:KI,$(PID)) $(PORT) 0")
   field(FLNK, "$(Sys)$(Dev)Pid$(PID):Ki-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 # CONF:PID:REF {PIDNo}
@@ -244,7 +244,7 @@ record(ao, "$(Sys)$(Dev)Pid$(PID):Ref-SP") {
   field(SCAN, "Passive")
   field(OUT, "@F460.protocol writeChFloat($(Sys)$(Dev),CONF:PID:REF,$(PID)) $(PORT) 0")
   field(FLNK, "$(Sys)$(Dev)Pid$(PID):Ref-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 # CONF:PID:PROF:LIMit PIDNo, LO, HI
@@ -276,7 +276,7 @@ record(ao, "$(Sys)$(Dev)Pid$(PID):DacLo-SP") {
   field(DRVH, "10.0")
   field(DRVL, "-10.0")
   field(FLNK, "$(Sys)$(Dev)Pid$(PID):Cmd:Daclim")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(ao, "$(Sys)$(Dev)Pid$(PID):DacHi-SP") {
@@ -287,7 +287,7 @@ record(ao, "$(Sys)$(Dev)Pid$(PID):DacHi-SP") {
   field(DRVH, "10.0")
   field(DRVL, "-10.0")
   field(FLNK, "$(Sys)$(Dev)Pid$(PID):Cmd:Daclim")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(calcout, "$(Sys)$(Dev)Pid$(PID):Cmd:Daclim") {
@@ -298,7 +298,7 @@ record(calcout, "$(Sys)$(Dev)Pid$(PID):Cmd:Daclim") {
   field(INPB, "$(Sys)$(Dev)Pid$(PID):DacHi-SP")
   field(OUT, "@F460.protocol setLimit($(Sys)$(Dev),Pid$(PID),$(PID),CONF:PID:PROF:LIM) $(PORT) 0")
   field(FLNK, "$(Sys)$(Dev)Pid$(PID):DacLo-I")
-  info(autosaveFields, "VAL A B")
+  info(autosaveFields_pass0, "VAL A B")
 }
 
 #
@@ -328,7 +328,7 @@ record(bo, "$(Sys)$(Dev)Pid$(PID):Prof-Out") {
   field(ZNAM, "Disabled")
   field(ONAM, "Enabled")
   field(FLNK, "$(Sys)$(Dev)Pid$(PID):Prof-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(bi, "$(Sys)$(Dev)Pid$(PID):Prof-I") {

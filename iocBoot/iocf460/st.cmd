@@ -32,11 +32,11 @@ dbLoadRecords("db/F460.db", "Sys=$(Sys),Dev=$(Dev),PORT=$(PORT),PINI=YES,BUFSZ=1
 dbLoadRecords("db/asyn.db", "Sys=$(Sys),Dev=$(Dev),PORT=$(PORT),ADDR=0")
 
 cd ${TOP}/iocBoot/${IOC}/
-# < autosave.cmd
+< autosave.cmd
 
-#var streamDebug 1
 iocInit()
 dbl > ${TOP}/opi/pvs.pvlist
 
-# create_monitor_set("F460.req", 15)
+create_monitor_set("info_settings.req", 30)
+create_monitor_set("info_positions.req", 15)
 #var streamDebug 1

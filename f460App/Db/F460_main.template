@@ -157,7 +157,7 @@ record(mbbo, "$(Sys)$(Dev)IntSrc-SP") {
   field(THST, "Channel 3")
   field(FRST, "External")
   field(FLNK, "$(Sys)$(Dev)IntSrc-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(mbbi, "$(Sys)$(Dev)IntSrc-I") {
@@ -192,7 +192,7 @@ record(mbbo, "$(Sys)$(Dev)Freq-SP") {
   field(TWST, "Negative only")
   field(THST, "Absolute")
   field(FLNK, "$(Sys)$(Dev)Freq-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(mbbi, "$(Sys)$(Dev)Freq-I") {
@@ -216,7 +216,7 @@ record(mbbi, "$(Sys)$(Dev)Freq-I") {
 #   field(EGU, "V")
 #   field(FLNK, "$(Sys)$(Dev)HIVO_MAX_IN")
 #   field(PREC, "$(PREC)")
-#   info(autosaveFields, "VAL")
+#   info(autosaveFields_pass0, "VAL")
 # }
 # 
 # record(ai, "$(Sys)$(Dev)HIVO_MAX_IN") {
@@ -249,7 +249,7 @@ record(ao, "$(Sys)$(Dev)HiVo-SP") {
   field(EGU, "V")
   field(FLNK, "$(Sys)$(Dev)HiVo-I")
   field(PREC, "$(PREC)")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(ai, "$(Sys)$(Dev)HiVo-I") {
@@ -284,7 +284,7 @@ record(bo, "$(Sys)$(Dev)Cmd:HiVoEn") {
   field(ZNAM, "Disabled")
   field(ONAM, "Enabled")
   field(FLNK, "$(Sys)$(Dev)HiVoEn-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(bi, "$(Sys)$(Dev)HiVoEn-I") {
@@ -314,7 +314,7 @@ record(mbbo, "$(Sys)$(Dev)Mon-SP") {
   field(TWST, "Mon A,B map X,Y")
   field(THST, "PID")
   field(FLNK, "$(Sys)$(Dev)Mon-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(mbbi, "$(Sys)$(Dev)Mon-I") {
@@ -351,7 +351,7 @@ record(ao, "$(Sys)$(Dev)Per-SP") {
   field(DRVL, "0.0")
   field(FLNK, "$(Sys)$(Dev)Per-I")
   field(PREC, "$(PREC)")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 
@@ -826,7 +826,7 @@ record(ao, "$(Sys)$(Dev)Timeout-SP") {
   field(DRVL, "0.0")
   field(FLNK, "$(Sys)$(Dev)Timeout-I")
   field(PREC, "$(PREC)")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 ## SYST:COMMunication:IPMODE DHCP|Static
@@ -839,7 +839,7 @@ record(mbbo, "$(Sys)$(Dev)IpMode-SP") {
   field(ZRST, "DHCP")
   field(ONST, "Static")
   field(FLNK, "$(Sys)$(Dev)Ipmode-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(mbbi, "$(Sys)$(Dev)Ipmode-I") {
@@ -862,7 +862,7 @@ record(stringout, "$(Sys)$(Dev)Ip-SP") {
   field(DESC, "(TCP/IP) IP")
   field(OUT, "@F460.protocol writeStr($(Sys)$(Dev),SYST:COMM:IP) $(PORT) 0")
   field(FLNK, "$(Sys)$(Dev)Ip-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(stringin, "$(Sys)$(Dev)Ip-I") {
@@ -880,7 +880,7 @@ record(stringout, "$(Sys)$(Dev)Netmask-SP") {
   field(DESC, "(TCP/IP) Netmask")
   field(OUT, "@F460.protocol writeStr($(Sys)$(Dev),SYST:COMM:NET) $(PORT) 0")
   field(FLNK, "$(Sys)$(Dev)Netmask-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(stringin, "$(Sys)$(Dev)Netmask-I") {
@@ -897,7 +897,7 @@ record(stringout, "$(Sys)$(Dev)Gate-SP") {
   field(DESC, "(TCP/IP) Gateway")
   field(OUT, "@F460.protocol writeStr($(Sys)$(Dev),SYST:COMM:GATE) $(PORT) 0")
   field(FLNK, "$(Sys)$(Dev)Gate-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(stringin, "$(Sys)$(Dev)Gate-I") {
@@ -914,7 +914,7 @@ record(stringout, "$(Sys)$(Dev)LogIp-SP") {
   field(DESC, "(TCP/IP) Log IP")
   field(OUT, "@F460.protocol writeStr($(Sys)$(Dev),SYST:COMM:LOG) $(PORT) 0")
   field(FLNK, "$(Sys)$(Dev)LogIp-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(stringin, "$(Sys)$(Dev)LogIp-I") {
@@ -954,7 +954,7 @@ record(longout, "$(Sys)$(Dev)BufSz-SP") {
   field(SCAN, "Passive")
   field(OUT, "@F460.protocol writeInt($(Sys)$(Dev),TRIG:BUF) $(PORT) 0")
   field(FLNK, "$(Sys)$(Dev)BufSz-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(longin, "$(Sys)$(Dev)BufSz-I") {
@@ -975,7 +975,7 @@ record(longout, "$(Sys)$(Dev)Burst-SP") {
   field(SCAN, "Passive")
   field(OUT, "@F460.protocol writeInt($(Sys)$(Dev),TRIG:BUR) $(PORT) 0")
   field(FLNK, "$(Sys)$(Dev)Burst-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(longin, "$(Sys)$(Dev)Burst-I") {
@@ -1003,7 +1003,7 @@ record(mbbo, "$(Sys)$(Dev)Cmd:TrigMode") {
   field(FRST, "EXTERNAL_START_HOLD")
   field(FVST, "EXTERNAL_WINDOWED")
   field(FLNK, "$(Sys)$(Dev)TrigMode-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(mbbi, "$(Sys)$(Dev)TrigMode-I") {
@@ -1032,7 +1032,7 @@ record(bo, "$(Sys)$(Dev)TrigPol-SP") {
   field(ZNAM, "Rising")
   field(ONAM, "Falling")
   field(FLNK, "$(Sys)$(Dev)TrigPol-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(bi, "$(Sys)$(Dev)TrigPol-I") {
@@ -1056,7 +1056,7 @@ record(mbbo, "$(Sys)$(Dev)Cmd:TrigStart") {
   field(ZRST, "INTernal")
   field(ONST, "BNC")
   field(FLNK, "$(Sys)$(Dev)TrigStart-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(mbbi, "$(Sys)$(Dev)TrigStart-I") {
@@ -1081,7 +1081,7 @@ record(mbbo, "$(Sys)$(Dev)Cmd:TrigStop") {
   field(ZRST, "INTernal")
   field(ONST, "BNC")
   field(FLNK, "$(Sys)$(Dev)TrigStop-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(mbbi, "$(Sys)$(Dev)TrigStop-I") {
@@ -1106,7 +1106,7 @@ record(mbbo, "$(Sys)$(Dev)Cmd:TrigPause") {
   field(ZRST, "INTernal")
   field(ONST, "BNC")
   field(FLNK, "$(Sys)$(Dev)TrigPause-I")
-  info(autosaveFields, "VAL")
+  info(autosaveFields_pass0, "VAL")
 }
 
 record(mbbi, "$(Sys)$(Dev)TrigPause-I") {
