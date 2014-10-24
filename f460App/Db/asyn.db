@@ -1,4 +1,4 @@
-record(asyn,"$(P)COMM") {
+record(asyn,"$(Sys)$(Dev)Comm-Asyn") {
   field(PORT,"$(PORT)")
   field(ADDR,"$(ADDR)")
 }

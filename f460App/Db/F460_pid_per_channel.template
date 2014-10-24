@@ -22,8 +22,8 @@
 #       13:  X
 #       14:  Y
 #       15:  I1+I2+I3+I4
-record(mbbo, "$(P)PID$(PID):MODE_OUT") {
-  field(DESC, "PID$(PID) mode")
+record(mbbo, "$(Sys)$(Dev)Pid$(PID):Mode-Out") {
+  field(DESC, "Pid$(PID) mode")
   field(SCAN, "Passive")
 
   field(ZRVL, 0)
@@ -58,16 +58,16 @@ record(mbbo, "$(P)PID$(PID):MODE_OUT") {
   field(TTST, "Profile Y")
   field(FTST, "Profile I1+I2+I3+I4")
 
-  field(FLNK, "$(P)PID:WRITE_MODE")
+  field(FLNK, "$(Sys)$(Dev)Pid:Cmd:Mode")
   info(autosaveFields, "VAL")
 }
 
-record(mbbi, "$(P)PID$(PID):MODE_IN") {
-  field(DESC, "PID$(PID) mode")
+record(mbbi, "$(Sys)$(Dev)Pid$(PID):Mode-I") {
+  field(DESC, "Pid$(PID) mode")
   field(DTYP, "stream")
   field(SCAN, "Passive")
   field(PINI, "$(PINI)")
-  field(INP, "@F460.protocol readChInt($(P),CONF:PID:MOD,$(PID)) $(PORT) 0")
+  field(INP, "@F460.protocol readChInt($(Sys)$(Dev),CONF:PID:MOD,$(PID)) $(PORT) 0")
 
   field(ZRVL, 0)
   field(ONVL, 1)
@@ -108,54 +108,54 @@ record(mbbi, "$(P)PID$(PID):MODE_IN") {
 #     Set (query) the control output analog limits for servo PIDNo to LO and HI (in range -10V to +10V). 
 #     Control output for PIDNo=1 is analog output 1
 #     Control output for PIDNo=2 is analog output 2
-record(ai, "$(P)PID$(PID):LO_IN") {
-  field(DESC, "PID$(PID) low limit")
+record(ai, "$(Sys)$(Dev)Pid$(PID):Lo-I") {
+  field(DESC, "Pid$(PID) low limit")
   field(DTYP, "stream")
   field(SCAN, "Passive")
   field(PINI, "$(PINI)")
   field(EGU, "V")
-  field(INP, "@F460.protocol getLimit($(P),PID$(PID):,$(PID),CONF:PID:LIM) $(PORT) 0")
+  field(INP, "@F460.protocol getLimit($(Sys)$(Dev),Pid$(PID):,$(PID),CONF:PID:LIM) $(PORT) 0")
   field(PREC, "$(PREC)")
 }
 
-record(ai, "$(P)PID$(PID):HI_IN") {
-  field(DESC, "PID$(PID) high limit")
+record(ai, "$(Sys)$(Dev)Pid$(PID):Hi-I") {
+  field(DESC, "Pid$(PID) high limit")
   field(SCAN, "Passive")
   field(PINI, "$(PINI)")
   field(EGU, "V")
   field(PREC, "$(PREC)")
 }
 
-record(ao, "$(P)PID$(PID):LO_OUT") {
-  field(DESC, "PID$(PID) servo low lim")
+record(ao, "$(Sys)$(Dev)Pid$(PID):Lo-SP") {
+  field(DESC, "Pid$(PID) servo low lim")
   field(DTYP, "Soft Channel")
   field(SCAN, "Passive")
   field(EGU, "V")
   field(DRVH, "10.0")
   field(DRVL, "-10.0")
-  field(FLNK, "$(P)PID$(PID):WRITE_LIM")
+  field(FLNK, "$(Sys)$(Dev)Pid$(PID):Cmd:Lim")
   info(autosaveFields, "VAL")
 }
 
-record(ao, "$(P)PID$(PID):HI_OUT") {
-  field(DESC, "PID$(PID) servo high lim")
+record(ao, "$(Sys)$(Dev)Pid$(PID):Hi-SP") {
+  field(DESC, "Pid$(PID) servo high lim")
   field(DTYP, "Soft Channel")
   field(SCAN, "Passive")
   field(EGU, "V")
   field(DRVH, "10.0")
   field(DRVL, "-10.0")
-  field(FLNK, "$(P)PID$(PID):WRITE_LIM")
+  field(FLNK, "$(Sys)$(Dev)Pid$(PID):Cmd:Lim")
   info(autosaveFields, "VAL")
 }
 
-record(calcout, "$(P)PID$(PID):WRITE_LIM") {
-  field(DESC, "PID$(PID) write limits")
+record(calcout, "$(Sys)$(Dev)Pid$(PID):Cmd:Lim") {
+  field(DESC, "Pid$(PID) write limits")
   field(DTYP, "stream")
   field(CALC, "0")
-  field(INPA, "$(P)PID$(PID):LO_OUT")
-  field(INPB, "$(P)PID$(PID):HI_OUT")
-  field(OUT, "@F460.protocol setLimit($(P),PID$(PID),$(PID),CONF:PID:LIM) $(PORT) 0")
-  field(FLNK, "$(P)PID$(PID):LO_IN")
+  field(INPA, "$(Sys)$(Dev)Pid$(PID):Lo-SP")
+  field(INPB, "$(Sys)$(Dev)Pid$(PID):Hi-SP")
+  field(OUT, "@F460.protocol setLimit($(Sys)$(Dev),Pid$(PID),$(PID),CONF:PID:LIM) $(PORT) 0")
+  field(FLNK, "$(Sys)$(Dev)Pid$(PID):Lo-I")
   info(autosaveFields, "VAL A B")
 }
 
@@ -163,141 +163,141 @@ record(calcout, "$(P)PID$(PID):WRITE_LIM") {
 #     Set (query) the sum SigI amps of the input currents used to form the process variable for PIDNo  
 #     in the selected mode, below which the servo will be suspended
 
-record(ai, "$(P)PID$(PID):SIG_IN") {
-  field(DESC, "PID$(PID) Servo SigI")
+record(ai, "$(Sys)$(Dev)Pid$(PID):Sig-I") {
+  field(DESC, "Pid$(PID) Servo SigI")
   field(DTYP, "stream")
   field(SCAN, "Passive")
   field(PINI, "$(PINI)")
   field(EGU, "A")
-  field(INP, "@F460.protocol readChFloat($(P),CONF:PID:SIG,$(PID)) $(PORT) 0")
+  field(INP, "@F460.protocol readChFloat($(Sys)$(Dev),CONF:PID:SIG,$(PID)) $(PORT) 0")
   field(PREC, "$(PREC)")
 }
 
-record(ao, "$(P)PID$(PID):SIG_OUT") {
-  field(DESC, "PID$(PID) Servo SigI")
+record(ao, "$(Sys)$(Dev)Pid$(PID):Sig-SP") {
+  field(DESC, "Pid$(PID) Servo SigI")
   field(DTYP, "stream")
   field(SCAN, "Passive")
-  field(OUT, "@F460.protocol writeChFloat($(P),CONF:PID:SIG,$(PID)) $(PORT) 0")
+  field(OUT, "@F460.protocol writeChFloat($(Sys)$(Dev),CONF:PID:SIG,$(PID)) $(PORT) 0")
   field(EGU, "A")
-  field(FLNK, "$(P)PID$(PID):SIG_IN")
+  field(FLNK, "$(Sys)$(Dev)Pid$(PID):Sig-I")
   info(autosaveFields, "VAL")
 }
 
 # CONF:PID:KP {PIDNo, Prop}
 #     Set (query) the proportional parameter for servo PIDNo to Prop.
 #
-record(ai, "$(P)PID$(PID):KP_IN") {
-  field(DESC, "PID$(PID) Servo KP")
+record(ai, "$(Sys)$(Dev)Pid$(PID):Kp-I") {
+  field(DESC, "Pid$(PID) Servo KP")
   field(DTYP, "stream")
   field(SCAN, "Passive")
   field(PINI, "$(PINI)")
-  field(INP, "@F460.protocol readChFloat($(P),CONF:PID:KP,$(PID)) $(PORT) 0")
+  field(INP, "@F460.protocol readChFloat($(Sys)$(Dev),CONF:PID:KP,$(PID)) $(PORT) 0")
   field(TPRO, 1)
   field(PREC, "$(PREC)")
 }
 
-record(ao, "$(P)PID$(PID):KP_OUT") {
-  field(DESC, "PID$(PID) Servo KP")
+record(ao, "$(Sys)$(Dev)Pid$(PID):Kp-SP") {
+  field(DESC, "Pid$(PID) Servo KP")
   field(DTYP, "stream")
   field(SCAN, "Passive")
-  field(OUT, "@F460.protocol writeChFloat($(P),CONF:PID:KP,$(PID)) $(PORT) 0")
-  field(FLNK, "$(P)PID$(PID):KP_IN")
+  field(OUT, "@F460.protocol writeChFloat($(Sys)$(Dev),CONF:PID:KP,$(PID)) $(PORT) 0")
+  field(FLNK, "$(Sys)$(Dev)Pid$(PID):Kp-I")
   field(TPRO, 1)
   info(autosaveFields, "VAL")
 }
 
 # CONF:PID:KI {PIDNo, Prop}
 #     Set (query) the integral parameter for servo PIDNo to Int.
-record(ai, "$(P)PID$(PID):KI_IN") {
-  field(DESC, "PID$(PID) Servo KI")
+record(ai, "$(Sys)$(Dev)Pid$(PID):Ki-I") {
+  field(DESC, "Pid$(PID) Servo KI")
   field(DTYP, "stream")
   field(SCAN, "Passive")
   field(PINI, "$(PINI)")
-  field(INP, "@F460.protocol readChFloat($(P),CONF:PID:KI,$(PID)) $(PORT) 0")
+  field(INP, "@F460.protocol readChFloat($(Sys)$(Dev),CONF:PID:KI,$(PID)) $(PORT) 0")
   field(PREC, "$(PREC)")
 }
 
-record(ao, "$(P)PID$(PID):KI_OUT") {
-  field(DESC, "PID$(PID) Servo KI")
+record(ao, "$(Sys)$(Dev)Pid$(PID):Ki-SP") {
+  field(DESC, "Pid$(PID) Servo KI")
   field(DTYP, "stream")
   field(SCAN, "Passive")
-  field(OUT, "@F460.protocol writeChFloat($(P),CONF:PID:KI,$(PID)) $(PORT) 0")
-  field(FLNK, "$(P)PID$(PID):KI_IN")
+  field(OUT, "@F460.protocol writeChFloat($(Sys)$(Dev),CONF:PID:KI,$(PID)) $(PORT) 0")
+  field(FLNK, "$(Sys)$(Dev)Pid$(PID):Ki-I")
   info(autosaveFields, "VAL")
 }
 
 # CONF:PID:REF {PIDNo}
 #     Set (query) the reference value that is divided out from all
 #     sensor values for PID
-record(ai, "$(P)PID$(PID):REF_IN") {
-  field(DESC, "PID$(PID) reference")
+record(ai, "$(Sys)$(Dev)Pid$(PID):Ref-I") {
+  field(DESC, "Pid$(PID) reference")
   field(DTYP, "stream")
   field(SCAN, "Passive")
   field(PINI, "$(PINI)")
-  field(INP, "@F460.protocol readChFloat($(P),CONF:PID:REF,$(PID)) $(PORT) 0")
+  field(INP, "@F460.protocol readChFloat($(Sys)$(Dev),CONF:PID:REF,$(PID)) $(PORT) 0")
   field(PREC, "$(PREC)")
 }
 
-record(ao, "$(P)PID$(PID):REF_OUT") {
-  field(DESC, "PID$(PID) reference")
+record(ao, "$(Sys)$(Dev)Pid$(PID):Ref-SP") {
+  field(DESC, "Pid$(PID) reference")
   field(DTYP, "stream")
   field(SCAN, "Passive")
-  field(OUT, "@F460.protocol writeChFloat($(P),CONF:PID:REF,$(PID)) $(PORT) 0")
-  field(FLNK, "$(P)PID$(PID):REF_IN")
+  field(OUT, "@F460.protocol writeChFloat($(Sys)$(Dev),CONF:PID:REF,$(PID)) $(PORT) 0")
+  field(FLNK, "$(Sys)$(Dev)Pid$(PID):Ref-I")
   info(autosaveFields, "VAL")
 }
 
 # CONF:PID:PROF:LIMit PIDNo, LO, HI
 #     Set (query) the low and high DAC limits in volts for the automated sweep for servo PIDNo.  
 #     The sweep will use the number of points set as the buffer size.
-record(ai, "$(P)PID$(PID):DACLO_IN") {
-  field(DESC, "PID$(PID) low DAC limit")
+record(ai, "$(Sys)$(Dev)Pid$(PID):DacLo-I") {
+  field(DESC, "Pid$(PID) low DAC limit")
   field(DTYP, "stream")
-  field(INP, "@F460.protocol getLimit($(P),PID$(PID):DAC,$(PID),CONF:PID:PROF:LIM) $(PORT) 0")
+  field(INP, "@F460.protocol getLimit($(Sys)$(Dev),Pid$(PID):Dac,$(PID),CONF:PID:PROF:LIM) $(PORT) 0")
   field(SCAN, "Passive")
   field(PINI, "$(PINI)")
   field(EGU, "V")
   field(PREC, "$(PREC)")
 }
 
-record(ai, "$(P)PID$(PID):DACHI_IN") {
-  field(DESC, "PID$(PID) high DAC limit")
+record(ai, "$(Sys)$(Dev)Pid$(PID):DacHi-I") {
+  field(DESC, "Pid$(PID) high DAC limit")
   field(SCAN, "Passive")
   field(PINI, "$(PINI)")
   field(EGU, "V")
   field(PREC, "$(PREC)")
 }
 
-record(ao, "$(P)PID$(PID):DACLO_OUT") {
-  field(DESC, "PID$(PID) Servo DAC low")
+record(ao, "$(Sys)$(Dev)Pid$(PID):DacLo-SP") {
+  field(DESC, "Pid$(PID) Servo DAC low")
   field(DTYP, "Soft Channel")
   field(SCAN, "Passive")
   field(EGU, "V")
   field(DRVH, "10.0")
   field(DRVL, "-10.0")
-  field(FLNK, "$(P)PID$(PID):WRITE_DACLIM")
+  field(FLNK, "$(Sys)$(Dev)Pid$(PID):Cmd:Daclim")
   info(autosaveFields, "VAL")
 }
 
-record(ao, "$(P)PID$(PID):DACHI_OUT") {
-  field(DESC, "PID$(PID) Servo DAC high")
+record(ao, "$(Sys)$(Dev)Pid$(PID):DacHi-SP") {
+  field(DESC, "Pid$(PID) Servo DAC high")
   field(DTYP, "Soft Channel")
   field(SCAN, "Passive")
   field(EGU, "V")
   field(DRVH, "10.0")
   field(DRVL, "-10.0")
-  field(FLNK, "$(P)PID$(PID):WRITE_DACLIM")
+  field(FLNK, "$(Sys)$(Dev)Pid$(PID):Cmd:Daclim")
   info(autosaveFields, "VAL")
 }
 
-record(calcout, "$(P)PID$(PID):WRITE_DACLIM") {
-  field(DESC, "PID$(PID) Write DAC limits")
+record(calcout, "$(Sys)$(Dev)Pid$(PID):Cmd:Daclim") {
+  field(DESC, "Pid$(PID) Write DAC limits")
   field(DTYP, "stream")
   field(CALC, "0")
-  field(INPA, "$(P)PID$(PID):DACLO_OUT")
-  field(INPB, "$(P)PID$(PID):DACHI_OUT")
-  field(OUT, "@F460.protocol setLimit($(P),PID$(PID),$(PID),CONF:PID:PROF:LIM) $(PORT) 0")
-  field(FLNK, "$(P)PID$(PID):DACLO_IN")
+  field(INPA, "$(Sys)$(Dev)Pid$(PID):DacLo-SP")
+  field(INPB, "$(Sys)$(Dev)Pid$(PID):DacHi-SP")
+  field(OUT, "@F460.protocol setLimit($(Sys)$(Dev),Pid$(PID),$(PID),CONF:PID:PROF:LIM) $(PORT) 0")
+  field(FLNK, "$(Sys)$(Dev)Pid$(PID):DacLo-I")
   info(autosaveFields, "VAL A B")
 }
 
@@ -319,42 +319,42 @@ record(calcout, "$(P)PID$(PID):WRITE_DACLIM") {
 #     The profile will remain enabled until either turned off by this command, or 
 #     when all data points have been read and the profile is completed.
 
-record(bo, "$(P)PID$(PID):PROF_OUT") {
-  field(DESC, "PID$(PID) profile enable")
+record(bo, "$(Sys)$(Dev)Pid$(PID):Prof-Out") {
+  field(DESC, "Pid$(PID) profile enable")
   field(DTYP, "stream")
   field(SCAN, "Passive")
   field(PINI, "$(PINI)")
-  field(OUT, "@F460.protocol writeChInt($(P),PID:PROF,$(PID)) $(PORT) 0")
+  field(OUT, "@F460.protocol writeChInt($(Sys)$(Dev),PID:PROF,$(PID)) $(PORT) 0")
   field(ZNAM, "Disabled")
   field(ONAM, "Enabled")
-  field(FLNK, "$(P)PID$(PID):PROF_IN")
+  field(FLNK, "$(Sys)$(Dev)Pid$(PID):Prof-I")
   info(autosaveFields, "VAL")
 }
 
-record(bi, "$(P)PID$(PID):PROF_IN") {
-  field(DESC, "PID$(PID) Profile enable")
+record(bi, "$(Sys)$(Dev)Pid$(PID):Prof-I") {
+  field(DESC, "Pid$(PID) Profile enable")
   field(DTYP, "stream")
   field(PINI, "$(PINI)")
-  field(INP, "@F460.protocol readChInt($(P),PID:PROF,$(PID)) $(PORT) 0")
+  field(INP, "@F460.protocol readChInt($(Sys)$(Dev),PID:PROF,$(PID)) $(PORT) 0")
   field(ZNAM, "Disabled")
   field(ONAM, "Enabled")
 }
 
 
 # CONF:PID:MODe [mode0] [mode1]
-record(calcout, "$(P)PID:WRITE_MODE") {
+record(calcout, "$(Sys)$(Dev)Pid:Cmd:Mode") {
   field(DESC, "Write PID modes")
   field(DTYP, "stream")
   field(CALC, "0")
-  field(INPA, "$(P)PID0:MODE_OUT.VAL")
-  field(INPB, "$(P)PID1:MODE_OUT.VAL")
-  field(OUT, "@F460.protocol setPIDMode($(P)) $(PORT) 0")
-  field(FLNK, "$(P)PID:READ_MODE")
+  field(INPA, "$(Sys)$(Dev)PID0:MODE_OUT.VAL")
+  field(INPB, "$(Sys)$(Dev)PID1:MODE_OUT.VAL")
+  field(OUT, "@F460.protocol setPIDMode($(Sys)$(Dev)) $(PORT) 0")
+  field(FLNK, "$(Sys)$(Dev)Pid:Cmd:Mode")
 }
 
-record(fanout, "$(P)PID:READ_MODE") {
-  field(LNK1, "$(P)PID0:MODE_IN")
-  field(LNK2, "$(P)PID1:MODE_IN")
+record(fanout, "$(Sys)$(Dev)Pid:Cmd:Mode") {
+  field(LNK1, "$(Sys)$(Dev)PID0:MODE_IN")
+  field(LNK2, "$(Sys)$(Dev)PID1:MODE_IN")
 }
 
 

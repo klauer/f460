@@ -152,7 +152,7 @@ $(pv_value)</tooltip>
       </foreground_color>
       <widget_type>Label</widget_type>
       <enabled>true</enabled>
-      <text>F460 Trigger Settings [$(P)]</text>
+      <text>F460 Trigger Settings [$(Sys)$(Dev)]</text>
       <font>
         <fontdata fontName="Sans" height="18" style="0" />
       </font>
@@ -271,7 +271,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>$(P)TRIG_MODE_IN</pv_name>
+      <pv_name>$(Sys)$(Dev)TrigMode-I</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -315,7 +315,7 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>$(P)TRIG_MODE_OUT</pv_name>
+      <pv_name>$(Sys)$(Dev)Cmd:TrigMode</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -444,7 +444,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>$(P)TRIG_PAUSE_IN</pv_name>
+      <pv_name>$(Sys)$(Dev)TrigPause-I</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -488,7 +488,7 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>$(P)TRIG_PAUSE_OUT</pv_name>
+      <pv_name>$(Sys)$(Dev)Cmd:TrigPause</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -617,7 +617,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>$(P)TRIG_START_IN</pv_name>
+      <pv_name>$(Sys)$(Dev)TrigStart-I</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -661,7 +661,7 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>$(P)TRIG_START_OUT</pv_name>
+      <pv_name>$(Sys)$(Dev)Cmd:TrigStart</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -790,7 +790,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>$(P)TRIG_STOP_IN</pv_name>
+      <pv_name>$(Sys)$(Dev)TrigStop-I</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -834,7 +834,7 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>$(P)TRIG_STOP_OUT</pv_name>
+      <pv_name>$(Sys)$(Dev)Cmd:TrigStop</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -963,7 +963,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>$(P)ANA:TRIG_CNT</pv_name>
+      <pv_name>$(Sys)$(Dev)Ana:TrigCnt</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -1095,7 +1095,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>$(P)CUR:TRIG_CNT</pv_name>
+      <pv_name>$(Sys)$(Dev)Cur:TrigCnt-I</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -1227,7 +1227,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>$(P)BUF_SZ_IN</pv_name>
+      <pv_name>$(Sys)$(Dev)BufSz-I</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -1295,7 +1295,7 @@ $(pv_value)</tooltip>
       </scale_options>
       <selector_type>0</selector_type>
       <transparent>false</transparent>
-      <pv_name>$(P)BUF_SZ_OUT</pv_name>
+      <pv_name>$(Sys)$(Dev)BufSz-SP</pv_name>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
@@ -1415,7 +1415,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>$(P)BURST_IN</pv_name>
+      <pv_name>$(Sys)$(Dev)Burst-I</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -1483,7 +1483,7 @@ $(pv_value)</tooltip>
       </scale_options>
       <selector_type>0</selector_type>
       <transparent>false</transparent>
-      <pv_name>$(P)BURST_OUT</pv_name>
+      <pv_name>$(Sys)$(Dev)Burst-SP</pv_name>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
@@ -1603,7 +1603,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>$(P)SEN:TRIG_CNT</pv_name>
+      <pv_name>$(Sys)$(Dev)Sen:TrigCnt-I</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -1735,7 +1735,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>$(P)TRIG_POL_IN</pv_name>
+      <pv_name>$(Sys)$(Dev)TrigPol-I</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -1779,7 +1779,7 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>$(P)TRIG_POL_OUT</pv_name>
+      <pv_name>$(Sys)$(Dev)TrigPol-SP</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -1846,7 +1846,7 @@ $(pv_value)</tooltip>
     <y>36</y>
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
-        <pv_name>$(P)EXECUTE_INIT</pv_name>
+        <pv_name>$(Sys)$(Dev)Cmd:Init</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
@@ -1957,7 +1957,7 @@ $(pv_value)</tooltip>
       <format_type>2</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>$(P)PER_IN</pv_name>
+      <pv_name>$(Sys)$(Dev)Per-I</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -2025,7 +2025,7 @@ $(pv_value)</tooltip>
       </scale_options>
       <selector_type>0</selector_type>
       <transparent>false</transparent>
-      <pv_name>$(P)PER_OUT</pv_name>
+      <pv_name>$(Sys)$(Dev)Per-SP</pv_name>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
@@ -2145,7 +2145,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>$(P)FREQ_IN</pv_name>
+      <pv_name>$(Sys)$(Dev)Freq-I</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -2189,7 +2189,7 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>$(P)FREQ_OUT</pv_name>
+      <pv_name>$(Sys)$(Dev)Freq-SP</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -2318,7 +2318,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>$(P)MON_IN</pv_name>
+      <pv_name>$(Sys)$(Dev)Mon-I</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -2362,7 +2362,7 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>$(P)MON_OUT</pv_name>
+      <pv_name>$(Sys)$(Dev)Mon-SP</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -2404,7 +2404,7 @@ $(pv_value)</tooltip>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <pv_name>$(P)READ_CUR.SCAN</pv_name>
+    <pv_name>$(Sys)$(Dev)Cmd:RdCur.SCAN</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -2445,7 +2445,7 @@ $(pv_value)</tooltip>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <pv_name>$(P)READ_SEN.SCAN</pv_name>
+    <pv_name>$(Sys)$(Dev)Cmd:RdSen.SCAN</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>
@@ -2486,7 +2486,7 @@ $(pv_value)</tooltip>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <pv_name>$(P)READ_ANA.SCAN</pv_name>
+    <pv_name>$(Sys)$(Dev)Cmd:RdAna.SCAN</pv_name>
     <background_color>
       <color red="255" green="255" blue="255" />
     </background_color>

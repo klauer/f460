@@ -9,9 +9,8 @@ dbLoadDatabase("dbd/f460.dbd")
 f460_registerRecordDeviceDriver(pdbbase)
 
 epicsEnvSet("STREAM_PROTOCOL_PATH", "${TOP}/f460App/Db")
-# **NOTE**: Name lengths matter. len(P) + len(PORT) <= 23
-# --> TODO: fix up some of the longer ones (INP/OUT) to increase this limit
-epicsEnvSet("P", "E1:F460:")
+epicsEnvSet("Sys", "E1:")
+epicsEnvSet("Dev", "F460:")
 epicsEnvSet("PORT", "E1")
 
 drvAsynIPPortConfigure("$(PORT)", "10.0.0.11:4001")
@@ -29,8 +28,8 @@ drvAsynIPPortConfigure("$(PORT)", "10.0.0.11:4001")
 #asynSetTraceIOMask("$(PORT)",0,"0x2")
 
 ## Load records
-dbLoadRecords("db/F460.db", "P=$(P),PORT=$(PORT),PINI=YES,BUFSZ=12,PREC=9")
-dbLoadRecords("db/asyn.db", "P=$(P),PORT=$(PORT),ADDR=0")
+dbLoadRecords("db/F460.db", "Sys=$(Sys),Dev=$(Dev),PORT=$(PORT),PINI=YES,BUFSZ=12,PREC=9")
+dbLoadRecords("db/asyn.db", "Sys=$(Sys),Dev=$(Dev),PORT=$(PORT),ADDR=0")
 
 cd ${TOP}/iocBoot/${IOC}/
 # < autosave.cmd

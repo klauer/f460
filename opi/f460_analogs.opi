@@ -282,7 +282,7 @@ $(pv_value)</tooltip>
     <trace_1_x_pv_value />
     <axis_0_scale_format></axis_0_scale_format>
     <trace_0_x_pv></trace_0_x_pv>
-    <trace_0_y_pv>$(P)SEN:I0</trace_0_y_pv>
+    <trace_0_y_pv>$(Sys)$(Dev)Sen:I0-I</trace_0_y_pv>
     <axis_0_title_font>
       <fontdata fontName="Arial" height="9" style="1" />
     </axis_0_title_font>
@@ -290,7 +290,7 @@ $(pv_value)</tooltip>
     <axis_1_auto_scale>true</axis_1_auto_scale>
     <trace_2_update_delay>100</trace_2_update_delay>
     <trace_0_concatenate_data>true</trace_0_concatenate_data>
-    <trace_3_y_pv>$(P)SEN:I3</trace_3_y_pv>
+    <trace_3_y_pv>$(Sys)$(Dev)Sen:I3-I</trace_3_y_pv>
     <actions hook="false" hook_all="false" />
     <trigger_pv_value />
     <trace_1_x_pv></trace_1_x_pv>
@@ -330,7 +330,7 @@ $(trace_0_y_pv_value)</tooltip>
     <trace_2_concatenate_data>true</trace_2_concatenate_data>
     <trace_2_point_style>0</trace_2_point_style>
     <title></title>
-    <trace_1_y_pv>$(P)SEN:I1</trace_1_y_pv>
+    <trace_1_y_pv>$(Sys)$(Dev)Sen:I1-I</trace_1_y_pv>
     <axis_2_auto_scale>true</axis_2_auto_scale>
     <pv_name></pv_name>
     <axis_1_minimum>0.0</axis_1_minimum>
@@ -370,7 +370,7 @@ $(trace_0_y_pv_value)</tooltip>
     </scale_options>
     <trace_1_concatenate_data>true</trace_1_concatenate_data>
     <rules />
-    <trace_2_y_pv>$(P)SEN:I2</trace_2_y_pv>
+    <trace_2_y_pv>$(Sys)$(Dev)Sen:I2-I</trace_2_y_pv>
     <trace_0_y_pv_value />
     <trace_0_trace_type>0</trace_0_trace_type>
     <axis_1_grid_color>
@@ -465,7 +465,7 @@ $(trace_0_y_pv_value)</tooltip>
     <trace_1_x_pv_value />
     <axis_0_scale_format></axis_0_scale_format>
     <trace_0_x_pv></trace_0_x_pv>
-    <trace_0_y_pv>$(P)ANA:AI1</trace_0_y_pv>
+    <trace_0_y_pv>$(Sys)$(Dev)Ana:Ai1</trace_0_y_pv>
     <axis_0_title_font>
       <fontdata fontName="Arial" height="9" style="1" />
     </axis_0_title_font>
@@ -503,7 +503,7 @@ $(trace_0_y_pv_value)</tooltip>
       <color red="255" green="255" blue="255" />
     </plot_area_background_color>
     <title></title>
-    <trace_1_y_pv>$(P)ANA:AI2</trace_1_y_pv>
+    <trace_1_y_pv>$(Sys)$(Dev)Ana:Ai2</trace_1_y_pv>
     <axis_2_auto_scale>true</axis_2_auto_scale>
     <pv_name></pv_name>
     <axis_1_minimum>0.0</axis_1_minimum>
@@ -558,7 +558,7 @@ $(trace_0_y_pv_value)</tooltip>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <pv_name>$(P)EXECUTE_INIT</pv_name>
+    <pv_name>$(Sys)$(Dev)Cmd:Init</pv_name>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -582,7 +582,7 @@ $(trace_0_y_pv_value)</tooltip>
     <y>36</y>
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
-        <pv_name>$(P)EXECUTE_INIT</pv_name>
+        <pv_name>$(Sys)$(Dev)Cmd:Init</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
@@ -608,7 +608,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <transparent>false</transparent>
-    <pv_name>$(P)READ_SEN.SCAN</pv_name>
+    <pv_name>$(Sys)$(Dev)Cmd:RdSen.SCAN</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -650,7 +650,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <transparent>false</transparent>
-    <pv_name>$(P)READ_ANA.SCAN</pv_name>
+    <pv_name>$(Sys)$(Dev)Cmd:RdAna.SCAN</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -691,7 +691,7 @@ $(pv_value)</tooltip>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <pv_name>$(P)EXECUTE_INIT</pv_name>
+    <pv_name>$(Sys)$(Dev)Cmd:Init</pv_name>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -715,7 +715,7 @@ $(pv_value)</tooltip>
     <y>36</y>
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
-        <pv_name>$(P)READ_SEN.PROC</pv_name>
+        <pv_name>$(Sys)$(Dev)Cmd:RdSen.PROC</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
@@ -740,7 +740,7 @@ $(pv_value)</tooltip>
       <height_scalable>true</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <pv_name>$(P)EXECUTE_INIT</pv_name>
+    <pv_name>$(Sys)$(Dev)Cmd:Init</pv_name>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
@@ -764,7 +764,7 @@ $(pv_value)</tooltip>
     <y>393</y>
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
-        <pv_name>$(P)READ_ANA.PROC</pv_name>
+        <pv_name>$(Sys)$(Dev)Cmd:RdAna.PROC</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>

@@ -1,19 +1,19 @@
 file $(TOP)/f460App/Db/F460_main.template {
 pattern {      P,     PORT,      PINI,     BUFSZ,     PREC }
-        {  \$(P), \$(PORT),   $(PINI), \$(BUFSZ),  $(PREC) }
+        {  \$(Sys)$(Dev), \$(PORT),   $(PINI), \$(BUFSZ),  $(PREC) }
 }
 
 file $(TOP)/f460App/Db/F460_channel.template {
 pattern {     P,     PORT,      PINI,    PREC, CH }
-        { \$(P), \$(PORT),   $(PINI), $(PREC),  0 }
-        { \$(P), \$(PORT),   $(PINI), $(PREC),  1 }
-        { \$(P), \$(PORT),   $(PINI), $(PREC),  2 }
-        { \$(P), \$(PORT),   $(PINI), $(PREC),  3 }
+        { \$(Sys)$(Dev), \$(PORT),   $(PINI), $(PREC),  0 }
+        { \$(Sys)$(Dev), \$(PORT),   $(PINI), $(PREC),  1 }
+        { \$(Sys)$(Dev), \$(PORT),   $(PINI), $(PREC),  2 }
+        { \$(Sys)$(Dev), \$(PORT),   $(PINI), $(PREC),  3 }
 }
 
 file $(TOP)/f460App/Db/F460_pid.template {
 pattern {     P,     PORT,      PINI,    PREC }
-        { \$(P), \$(PORT),   $(PINI), $(PREC) }
+        { \$(Sys)$(Dev), \$(PORT),   $(PINI), $(PREC) }
 }
 
 # The controller may in the future support 2 PID channels,
@@ -21,6 +21,6 @@ pattern {     P,     PORT,      PINI,    PREC }
 #
 #file $(TOP)/f460App/Db/F460_pid_per_channel.template {
 #pattern {     P,     PORT,      PINI,    PREC, PID }
-#        { \$(P), \$(PORT),   $(PINI), $(PREC),   0 }
-#        { \$(P), \$(PORT),   $(PINI), $(PREC),   1 }
+#        { \$(Sys)$(Dev), \$(PORT),   $(PINI), $(PREC),   0 }
+#        { \$(Sys)$(Dev), \$(PORT),   $(PINI), $(PREC),   1 }
 #}

@@ -3,10 +3,11 @@
   <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
   <macros>
     <include_parent_macros>true</include_parent_macros>
-    <P>E1:F460:</P>
+    <Sys>E1:</Sys>
+    <Dev>F460:</Dev>
   </macros>
   <wuid>7c32a782:1416f6861e0:d89</wuid>
-  <boy_version>3.2.9.201308301204</boy_version>
+  <boy_version>3.2.18.201410011619</boy_version>
   <scripts />
   <show_ruler>true</show_ruler>
   <height>550</height>
@@ -58,7 +59,7 @@
     <enabled>true</enabled>
     <widget_type>Grouping Container</widget_type>
     <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
     <width>643</width>
     <border_style>0</border_style>
@@ -110,7 +111,7 @@
       </fg_gradient_color>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <font>
-        <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+        <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
       </font>
       <width>643</width>
       <line_style>0</line_style>
@@ -194,7 +195,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>Trigger settings</text>
     <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
     <width>208</width>
     <border_style>0</border_style>
@@ -244,7 +245,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>Configuration</text>
     <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
     <width>208</width>
     <border_style>0</border_style>
@@ -294,7 +295,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>High voltage</text>
     <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
     <width>208</width>
     <border_style>0</border_style>
@@ -344,7 +345,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>PID</text>
     <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
     <width>208</width>
     <border_style>0</border_style>
@@ -398,7 +399,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
     <width>206</width>
     <border_style>6</border_style>
@@ -464,6 +465,7 @@ $(pv_value)</tooltip>
     <trace_1_point_size>4</trace_1_point_size>
     <trace_0_plot_mode>0</trace_0_plot_mode>
     <trace_count>4</trace_count>
+    <trace_2_y_pv_value />
     <axis_0_show_grid>true</axis_0_show_grid>
     <axis_2_log_scale>false</axis_2_log_scale>
     <axis_0_log_scale>false</axis_0_log_scale>
@@ -483,6 +485,7 @@ $(pv_value)</tooltip>
     <axis_1_visible>true</axis_1_visible>
     <height>307</height>
     <axis_1_maximum>100.0</axis_1_maximum>
+    <trace_3_x_pv_value />
     <trace_2_x_pv></trace_2_x_pv>
     <axis_1_title_font>
       <fontdata fontName="Arial" height="9" style="1" />
@@ -499,6 +502,7 @@ $(pv_value)</tooltip>
     <name>XY Graph</name>
     <axis_1_auto_scale_threshold>0.0</axis_1_auto_scale_threshold>
     <trace_0_line_width>1</trace_0_line_width>
+    <trace_2_x_pv_value />
     <show_toolbar>true</show_toolbar>
     <trace_1_update_delay>100</trace_1_update_delay>
     <axis_1_show_grid>false</axis_1_show_grid>
@@ -534,9 +538,10 @@ $(pv_value)</tooltip>
     <trace_3_update_mode>0</trace_3_update_mode>
     <axis_0_maximum>100.0</axis_0_maximum>
     <axis_0_scale_font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </axis_0_scale_font>
     <trace_2_point_size>4</trace_2_point_size>
+    <trace_1_y_pv_value />
     <axis_0_time_format>4</axis_0_time_format>
     <trace_3_concatenate_data>true</trace_3_concatenate_data>
     <trace_3_trace_color>
@@ -555,9 +560,10 @@ $(pv_value)</tooltip>
     <axis_2_dash_grid_line>true</axis_2_dash_grid_line>
     <axis_0_visible>true</axis_0_visible>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <trace_1_x_pv_value />
     <axis_0_scale_format></axis_0_scale_format>
     <trace_0_x_pv></trace_0_x_pv>
-    <trace_0_y_pv>$(P)CUR:I0</trace_0_y_pv>
+    <trace_0_y_pv>$(Sys)$(Dev)Cur:I0-I</trace_0_y_pv>
     <axis_0_title_font>
       <fontdata fontName="Arial" height="9" style="1" />
     </axis_0_title_font>
@@ -565,7 +571,7 @@ $(pv_value)</tooltip>
     <axis_1_auto_scale>true</axis_1_auto_scale>
     <trace_2_update_delay>100</trace_2_update_delay>
     <trace_0_concatenate_data>true</trace_0_concatenate_data>
-    <trace_3_y_pv>$(P)CUR:I3</trace_3_y_pv>
+    <trace_3_y_pv>$(Sys)$(Dev)Cur:I3-I</trace_3_y_pv>
     <actions hook="false" hook_all="false" />
     <trigger_pv_value />
     <trace_1_x_pv></trace_1_x_pv>
@@ -595,7 +601,7 @@ $(trace_0_y_pv_value)</tooltip>
     <trace_0_y_axis_index>1</trace_0_y_axis_index>
     <trace_3_visible>true</trace_3_visible>
     <axis_1_scale_font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </axis_1_scale_font>
     <border_style>0</border_style>
     <trace_3_x_axis_index>0</trace_3_x_axis_index>
@@ -605,7 +611,7 @@ $(trace_0_y_pv_value)</tooltip>
     <trace_2_concatenate_data>true</trace_2_concatenate_data>
     <trace_2_point_style>0</trace_2_point_style>
     <title></title>
-    <trace_1_y_pv>$(P)CUR:I1</trace_1_y_pv>
+    <trace_1_y_pv>$(Sys)$(Dev)Cur:I1-I</trace_1_y_pv>
     <axis_2_auto_scale>true</axis_2_auto_scale>
     <pv_name></pv_name>
     <axis_1_minimum>0.0</axis_1_minimum>
@@ -615,7 +621,7 @@ $(trace_0_y_pv_value)</tooltip>
     <trace_3_plot_mode>0</trace_3_plot_mode>
     <trace_0_visible>true</trace_0_visible>
     <axis_2_scale_font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </axis_2_scale_font>
     <axis_2_scale_format></axis_2_scale_format>
     <axis_0_minimum>0.0</axis_0_minimum>
@@ -645,12 +651,13 @@ $(trace_0_y_pv_value)</tooltip>
     </scale_options>
     <trace_1_concatenate_data>true</trace_1_concatenate_data>
     <rules />
-    <trace_2_y_pv>$(P)CUR:I2</trace_2_y_pv>
+    <trace_2_y_pv>$(Sys)$(Dev)Cur:I2-I</trace_2_y_pv>
     <trace_0_y_pv_value />
     <trace_0_trace_type>0</trace_0_trace_type>
     <axis_1_grid_color>
       <color red="200" green="200" blue="200" />
     </axis_1_grid_color>
+    <trace_3_y_pv_value />
     <trace_0_update_delay>100</trace_0_update_delay>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
@@ -675,7 +682,7 @@ $(trace_0_y_pv_value)</tooltip>
     <enabled>true</enabled>
     <text>Sensors / analog inputs</text>
     <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
     <width>208</width>
     <border_style>0</border_style>
@@ -709,7 +716,7 @@ $(pv_value)</tooltip>
     <wuid>-5d6cab15:142d8a165be:-6f55</wuid>
     <auto_size>true</auto_size>
     <scripts />
-    <height>17</height>
+    <height>15</height>
     <name>Label_2</name>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -727,9 +734,9 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <text>Update rate</text>
     <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
-    <width>77</width>
+    <width>61</width>
     <border_style>0</border_style>
     <rules />
     <border_width>1</border_width>
@@ -758,7 +765,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <transparent>false</transparent>
-    <pv_name>$(P)READ_CUR.SCAN</pv_name>
+    <pv_name>$(Sys)$(Dev)Cmd:RdCur.SCAN</pv_name>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -769,7 +776,7 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <font>
-      <opifont.name fontName="Sans" height="10" style="0">Default</opifont.name>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
     </font>
     <width>190</width>
     <border_style>6</border_style>

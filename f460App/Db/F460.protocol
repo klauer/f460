@@ -27,12 +27,12 @@ getId {
 parseId {
     out "*IDN?"; 
     in "*IDN?";
-    in "PYRTECHCO,%(\$1MODEL)[^,],%(\$1SERIAL)[^,],%(\$1FIRMWARE)s\r";
+    in "PYRTECHCO,%(\$1Model-I)[^,],%(\$1Serial-I)[^,],%(\$1Firmware-I)s\r";
       # PYRTECHCO,f460_1-REV0,0000003092,3.7.4/1.0.7
 }
 
 error_chars = "[a-zA-Z0-9._: ]";
-error_string = "%(\$1ERROR_CODE.VAL)d,\"%(\$1ERROR_DESC.VAL)[^\"]\"\r";
+error_string = "%(\$1ErrCode-Sts.VAL)d,\"%(\$1ErrDesc-Sts.VAL)[^\"]\"\r";
 # Note: can't define @mismatch globally due to $1 prefix
 #    @mismatch { in $error_string; }
 
@@ -92,7 +92,7 @@ getLimitCh {
     #   device, pid_prefix, pid number, command
     out "\$4? \$3"; 
     in  "\$4? \$3"; 
-    in  "%(\$1\${2}LO_IN.VAL)f,%(\$1\${2}HI_IN.VAL)f\r";
+    in  "%(\$1\${2}Lo-I.VAL)f,%(\$1\${2}Hi-I.VAL)f\r";
 }
 
 setLimitCh {
@@ -111,7 +111,7 @@ getLimit {
     #   device, pid_prefix, command
     out "\$3?";
     in  "\$3?";
-    in  "%(\$1\${2}LO_IN.VAL)f,%(\$1\${2}HI_IN.VAL)f\r";
+    in  "%(\$1\${2}Lo-I.VAL)f,%(\$1\${2}Hi-I.VAL)f\r";
 }
 
 setLimit {
@@ -130,7 +130,7 @@ getProfLimit {
     #   device, pid_prefix
     out "CONF:PID:PROF:LIM?";
     in  "CONF:PID:PROF:LIM?";
-    in  "%(\$1\${2}DACLO_IN.VAL)f,%(\$1\${2}DACHI_IN.VAL)f,%(\$1\${2}NPT_IN.VAL)d\r";
+    in  "%(\$1\${2}DacLo-I.VAL)f,%(\$1\${2}DacHi-I.VAL)f,%(\$1\${2}Npt-I.VAL)d\r";
 }
 
 setProfLimit {
@@ -153,21 +153,21 @@ get1Ana {
     out "FET:ANA?";
     in  "FET:ANA?";
     #0.0000e+00 S,0.0000e+00 V,0.0000e+00 V,0.0000e+00 S,0
-    in "%(\$1\$2:PER.VAL)f S,%(\$1\$2:AI1.VAL)f V,%(\$1\$2:AI2.VAL)f V,%(\$1\$2:TIME.VAL)f S,%(\$1\$2:TRIG_CNT.VAL)d\r";
+    in "%(\$1\$2:Per.VAL)f S,%(\$1\$2:Ai1.VAL)f V,%(\$1\$2:Ai2.VAL)f V,%(\$1\$2:Time-I.VAL)f S,%(\$1\$2:TrigCnt-I.VAL)d\r";
 }
 
 ## FET:SENsor? [numSamples]
 ## or FET:CURrent [numSamples]
 get1Sen {
     # arguments:
-    #   prefix, fetch type (SEN/CUR), prefix:(*):pv
+    #   prefix, prefix:(*):pv, fetch type (SEN/CUR)
     @mismatch { in $error_string; }
     # arguments:
     #   device, sensor_prefix
     out "FET:\$3?";
     in  "FET:\$3?";
     # 0.0000e+00 S,0.0000e+00 A,0.0000e+00 A,0.0000e+00 A,0.0000e+00 A,0.0000e+00 S,0
-    in "%(\$1\$2:PER.VAL)f S,%(\$1\$2:I0.VAL)f A,%(\$1\$2:I1.VAL)f A,%(\$1\$2:I2.VAL)f A,%(\$1\$2:I3.VAL)f A,%(\$1\$2:TIME.VAL)f S,%(\$1\$2:TRIG_CNT.VAL)d\r";
+    in "%(\$1\$2:Per.VAL)f S,%(\$1\$2:I0-I.VAL)f A,%(\$1\$2:I1-I.VAL)f A,%(\$1\$2:I2-I.VAL)f A,%(\$1\$2:I3-I.VAL)f A,%(\$1\$2:Time-I.VAL)f S,%(\$1\$2:TrigCnt-I.VAL)d\r";
 }
 
 ## FET:PID? [numsamples]
@@ -176,11 +176,11 @@ get1PID {
     # Single sensor input fetch
     @mismatch { in $error_string; }
     # arguments:
-    #   device, sensor_prefix
+    #   device, sensor_prefix, fetch command
     out "FET:\$3?";
     in  "FET:\$3?";
     # 0,0.0000e+00 V,0.0000e+00 V,0.0000e+00 V,0.0000e+00,0.0000e+00,0.0000e+00,0.0000e+00,0,0,0,8.4429e+04 S,844289
-    in "%(\$1\$2:ENABLED_IN.VAL)d,%(\$1\$2:INIT_V_IN.VAL)f V,%(\$1\$2:VOLTS_IN.VAL)f V,%(\$1\$2:AN1_IN.VAL)f V,%(\$1\$2:PROC:MEAS_IN.VAL)f,%(\$1\$2:PROC:TGT_IN)f,%(\$1\$2:PROC:DIFF_IN)f,%(\$1\$2:FOL_ERR_IN)f,%(\$1\$2:LOW_DAC_IN.VAL)d,%(\$1\$2:HI_DAC_IN.VAL)d,%(\$1\$2:LOW_I_IN.VAL)d,%(\$1\$2:TS_IN.VAL)f,%(\$1\$2:TS_NUM_IN.VAL)d\r";
+    in "%(\$1\$2:Enabled-I.VAL)d,%(\$1\$2:InitV-I.VAL)f V,%(\$1\$2:Volts-I.VAL)f V,%(\$1\$2:An1-I.VAL)f V,%(\$1\$2:Proc:Meas-I.VAL)f,%(\$1\$2:Proc:Tgt-I)f,%(\$1\$2:Proc:Diff-I)f,%(\$1\$2:FolErr-I)f,%(\$1\$2:LowDac-I.VAL)d,%(\$1\$2:HiDac-I.VAL)d,%(\$1\$2:LowI-I.VAL)d,%(\$1\$2:Ts-I.VAL)f,%(\$1\$2:TsNum-I.VAL)d\r";
 }
 
 #

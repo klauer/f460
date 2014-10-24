@@ -152,7 +152,7 @@ $(pv_value)</tooltip>
       </foreground_color>
       <widget_type>Label</widget_type>
       <enabled>true</enabled>
-      <text>F460 Configuration [$(P)]</text>
+      <text>F460 Configuration [$(Sys)$(Dev)]</text>
       <font>
         <fontdata fontName="Sans" height="18" style="0" />
       </font>
@@ -360,7 +360,7 @@ $(pv_value)</tooltip>
           <format_type>0</format_type>
           <precision_from_pv>true</precision_from_pv>
           <transparent>true</transparent>
-          <pv_name>$(P)LOG_IP_IN</pv_name>
+          <pv_name>$(Sys)$(Dev)LogIp-I</pv_name>
           <background_color>
             <color red="255" green="255" blue="255" />
           </background_color>
@@ -428,7 +428,7 @@ $(pv_value)</tooltip>
           </scale_options>
           <selector_type>0</selector_type>
           <transparent>false</transparent>
-          <pv_name>$(P)LOG_IP_OUT</pv_name>
+          <pv_name>$(Sys)$(Dev)LogIp-SP</pv_name>
           <foreground_color>
             <color red="0" green="0" blue="0" />
           </foreground_color>
@@ -548,7 +548,7 @@ $(pv_value)</tooltip>
           <format_type>0</format_type>
           <precision_from_pv>true</precision_from_pv>
           <transparent>true</transparent>
-          <pv_name>$(P)GATE_IN</pv_name>
+          <pv_name>$(Sys)$(Dev)Gate-I</pv_name>
           <background_color>
             <color red="255" green="255" blue="255" />
           </background_color>
@@ -616,7 +616,7 @@ $(pv_value)</tooltip>
           </scale_options>
           <selector_type>0</selector_type>
           <transparent>false</transparent>
-          <pv_name>$(P)GATE_OUT</pv_name>
+          <pv_name>$(Sys)$(Dev)Gate-SP</pv_name>
           <foreground_color>
             <color red="0" green="0" blue="0" />
           </foreground_color>
@@ -736,7 +736,7 @@ $(pv_value)</tooltip>
           <format_type>0</format_type>
           <precision_from_pv>true</precision_from_pv>
           <transparent>true</transparent>
-          <pv_name>$(P)NETMASK_IN</pv_name>
+          <pv_name>$(Sys)$(Dev)Netmask-I</pv_name>
           <background_color>
             <color red="255" green="255" blue="255" />
           </background_color>
@@ -804,7 +804,7 @@ $(pv_value)</tooltip>
           </scale_options>
           <selector_type>0</selector_type>
           <transparent>false</transparent>
-          <pv_name>$(P)NETMASK_OUT</pv_name>
+          <pv_name>$(Sys)$(Dev)Netmask-SP</pv_name>
           <foreground_color>
             <color red="0" green="0" blue="0" />
           </foreground_color>
@@ -924,7 +924,7 @@ $(pv_value)</tooltip>
           <format_type>0</format_type>
           <precision_from_pv>true</precision_from_pv>
           <transparent>true</transparent>
-          <pv_name>$(P)IP_IN</pv_name>
+          <pv_name>$(Sys)$(Dev)Ip-I</pv_name>
           <background_color>
             <color red="255" green="255" blue="255" />
           </background_color>
@@ -992,7 +992,7 @@ $(pv_value)</tooltip>
           </scale_options>
           <selector_type>0</selector_type>
           <transparent>false</transparent>
-          <pv_name>$(P)IP_OUT</pv_name>
+          <pv_name>$(Sys)$(Dev)Ip-SP</pv_name>
           <foreground_color>
             <color red="0" green="0" blue="0" />
           </foreground_color>
@@ -1112,7 +1112,7 @@ $(pv_value)</tooltip>
           <format_type>0</format_type>
           <precision_from_pv>true</precision_from_pv>
           <transparent>true</transparent>
-          <pv_name>$(P)IPMODE_IN</pv_name>
+          <pv_name>$(Sys)$(Dev)Ipmode-I</pv_name>
           <background_color>
             <color red="255" green="255" blue="255" />
           </background_color>
@@ -1156,7 +1156,7 @@ $(pv_value)</tooltip>
             <height_scalable>true</height_scalable>
             <keep_wh_ratio>false</keep_wh_ratio>
           </scale_options>
-          <pv_name>$(P)IPMODE_OUT</pv_name>
+          <pv_name>$(Sys)$(Dev)IpMode-SP</pv_name>
           <background_color>
             <color red="255" green="255" blue="255" />
           </background_color>
@@ -1376,7 +1376,7 @@ $(pv_value)</tooltip>
           <format_type>0</format_type>
           <precision_from_pv>true</precision_from_pv>
           <transparent>true</transparent>
-          <pv_name>$(P)MODEL</pv_name>
+          <pv_name>$(Sys)$(Dev)Model-I</pv_name>
           <background_color>
             <color red="255" green="255" blue="255" />
           </background_color>
@@ -1508,7 +1508,7 @@ $(pv_value)</tooltip>
           <format_type>0</format_type>
           <precision_from_pv>true</precision_from_pv>
           <transparent>true</transparent>
-          <pv_name>$(P)FIRMWARE</pv_name>
+          <pv_name>$(Sys)$(Dev)Firmware-I</pv_name>
           <background_color>
             <color red="255" green="255" blue="255" />
           </background_color>
@@ -1640,7 +1640,7 @@ $(pv_value)</tooltip>
           <format_type>0</format_type>
           <precision_from_pv>true</precision_from_pv>
           <transparent>true</transparent>
-          <pv_name>$(P)SERIAL</pv_name>
+          <pv_name>$(Sys)$(Dev)Serial-I</pv_name>
           <background_color>
             <color red="255" green="255" blue="255" />
           </background_color>
@@ -1814,7 +1814,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>true</transparent>
-        <pv_name>$(P)ERROR_CODE</pv_name>
+        <pv_name>$(Sys)$(Dev)ErrCode-Sts</pv_name>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
@@ -1865,7 +1865,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>true</transparent>
-        <pv_name>$(P)ERROR_DESC</pv_name>
+        <pv_name>$(Sys)$(Dev)ErrDesc-Sts</pv_name>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
@@ -1997,7 +1997,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>true</transparent>
-        <pv_name>$(P)ERR_COUNT_IN</pv_name>
+        <pv_name>$(Sys)$(Dev)ErrCount-I</pv_name>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
@@ -2066,7 +2066,7 @@ $(pv_value)</tooltip>
         <y>1</y>
         <actions hook="false" hook_all="false">
           <action type="WRITE_PV">
-            <pv_name>$(P)ACK_ERR</pv_name>
+            <pv_name>$(Sys)$(Dev)Cmd:AckErr</pv_name>
             <value>1</value>
             <timeout>10</timeout>
             <confirm_message></confirm_message>
@@ -2179,7 +2179,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>$(P)TIMEOUT_IN</pv_name>
+      <pv_name>$(Sys)$(Dev)Timeout-I</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -2247,7 +2247,7 @@ $(pv_value)</tooltip>
       </scale_options>
       <selector_type>0</selector_type>
       <transparent>false</transparent>
-      <pv_name>$(P)TIMEOUT_OUT</pv_name>
+      <pv_name>$(Sys)$(Dev)Timeout-SP</pv_name>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
@@ -2305,7 +2305,7 @@ $(pv_value)</tooltip>
     <y>78</y>
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
-        <pv_name>$(P)EXECUTE_SAVE</pv_name>
+        <pv_name>$(Sys)$(Dev)ExecuteSave</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
@@ -2354,7 +2354,7 @@ $(pv_value)</tooltip>
     <y>48</y>
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
-        <pv_name>$(P)EXECUTE_RESET</pv_name>
+        <pv_name>$(Sys)$(Dev)ExecuteReset</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
@@ -2403,7 +2403,7 @@ $(pv_value)</tooltip>
     <y>108</y>
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
-        <pv_name>$(P)EXECUTE_RECALL</pv_name>
+        <pv_name>$(Sys)$(Dev)ExecuteRecall</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>

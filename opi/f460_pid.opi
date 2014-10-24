@@ -152,7 +152,7 @@ $(pv_value)</tooltip>
       </foreground_color>
       <widget_type>Label</widget_type>
       <enabled>true</enabled>
-      <text>F460 PID Settings [$(P)]</text>
+      <text>F460 PID Settings [$(Sys)$(Dev)]</text>
       <font>
         <fontdata fontName="Sans" height="18" style="0" />
       </font>
@@ -273,7 +273,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color red="0" green="100" blue="0" />
       </off_color>
-      <pv_name>$(P)PID:HI_DAC_IN</pv_name>
+      <pv_name>$(Sys)$(Dev)Pid:HiDac-I</pv_name>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
@@ -407,7 +407,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color red="0" green="100" blue="0" />
       </off_color>
-      <pv_name>$(P)PID:LOW_DAC_IN</pv_name>
+      <pv_name>$(Sys)$(Dev)Pid:LowDac-I</pv_name>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
@@ -541,7 +541,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color red="0" green="100" blue="0" />
       </off_color>
-      <pv_name>$(P)PID:LOW_I_IN</pv_name>
+      <pv_name>$(Sys)$(Dev)Pid:LowI-I</pv_name>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
@@ -635,7 +635,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color red="0" green="100" blue="0" />
       </off_color>
-      <pv_name>$(P)PID:ENABLE_IN</pv_name>
+      <pv_name>$(Sys)$(Dev)Pid:Enable-I</pv_name>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
@@ -680,7 +680,7 @@ $(pv_value)</tooltip>
         <height_scalable>false</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>$(P)PID:ENABLE_OUT</pv_name>
+      <pv_name>$(Sys)$(Dev)Pid:Enable-Out</pv_name>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
@@ -775,7 +775,7 @@ $(pv_value)</tooltip>
       <off_color>
         <color red="0" green="100" blue="0" />
       </off_color>
-      <pv_name>$(P)PID:PROF_IN</pv_name>
+      <pv_name>$(Sys)$(Dev)Pid:Prof-I</pv_name>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
@@ -820,7 +820,7 @@ $(pv_value)</tooltip>
         <height_scalable>false</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>$(P)PID:PROF_OUT</pv_name>
+      <pv_name>$(Sys)$(Dev)Pid:Prof-SP</pv_name>
       <background_color>
         <color red="240" green="240" blue="240" />
       </background_color>
@@ -953,7 +953,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>$(P)PID:MODE_IN</pv_name>
+      <pv_name>$(Sys)$(Dev)Pid:Mode-I</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -997,7 +997,7 @@ $(pv_value)</tooltip>
         <height_scalable>true</height_scalable>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
-      <pv_name>$(P)PID:MODE_OUT</pv_name>
+      <pv_name>$(Sys)$(Dev)Pid:Mode-SP</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -1064,7 +1064,7 @@ $(pv_value)</tooltip>
     <y>42</y>
     <actions hook="false" hook_all="false">
       <action type="WRITE_PV">
-        <pv_name>$(P)PID:READ</pv_name>
+        <pv_name>$(Sys)$(Dev)Pid:Cmd:Rd</pv_name>
         <value>1</value>
         <timeout>10</timeout>
         <confirm_message></confirm_message>
@@ -1175,7 +1175,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>$(P)PID:DACHI_IN</pv_name>
+      <pv_name>$(Sys)$(Dev)Pid:DacHi-I</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -1243,7 +1243,7 @@ $(pv_value)</tooltip>
       </scale_options>
       <selector_type>0</selector_type>
       <transparent>false</transparent>
-      <pv_name>$(P)PID:DACHI_OUT</pv_name>
+      <pv_name>$(Sys)$(Dev)Pid:DacHi-SP</pv_name>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
@@ -1363,7 +1363,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>$(P)PID:DACLO_IN</pv_name>
+      <pv_name>$(Sys)$(Dev)Pid:DacLo-I</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -1431,7 +1431,7 @@ $(pv_value)</tooltip>
       </scale_options>
       <selector_type>0</selector_type>
       <transparent>false</transparent>
-      <pv_name>$(P)PID:DACLO_OUT</pv_name>
+      <pv_name>$(Sys)$(Dev)Pid:DacLo-SP</pv_name>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
@@ -1551,7 +1551,7 @@ $(pv_value)</tooltip>
       <format_type>0</format_type>
       <precision_from_pv>true</precision_from_pv>
       <transparent>true</transparent>
-      <pv_name>$(P)PID:NPT_IN</pv_name>
+      <pv_name>$(Sys)$(Dev)Pid:Npt-I</pv_name>
       <background_color>
         <color red="255" green="255" blue="255" />
       </background_color>
@@ -1619,7 +1619,7 @@ $(pv_value)</tooltip>
       </scale_options>
       <selector_type>0</selector_type>
       <transparent>false</transparent>
-      <pv_name>$(P)PID:NPT_OUT</pv_name>
+      <pv_name>$(Sys)$(Dev)Pid:Npt-SP</pv_name>
       <foreground_color>
         <color red="0" green="0" blue="0" />
       </foreground_color>
@@ -1779,7 +1779,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>true</transparent>
-        <pv_name>$(P)PID:AN1_IN</pv_name>
+        <pv_name>$(Sys)$(Dev)Pid:An1-I</pv_name>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
@@ -1911,7 +1911,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>true</transparent>
-        <pv_name>$(P)PID:FOL_ERR_IN</pv_name>
+        <pv_name>$(Sys)$(Dev)Pid:FolErr-I</pv_name>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
@@ -2043,7 +2043,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>true</transparent>
-        <pv_name>$(P)PID:INIT_V_IN</pv_name>
+        <pv_name>$(Sys)$(Dev)Pid:InitV-I</pv_name>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
@@ -2175,7 +2175,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>true</transparent>
-        <pv_name>$(P)PID:PROC:DIFF_IN</pv_name>
+        <pv_name>$(Sys)$(Dev)Pid:Proc:Diff-I</pv_name>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
@@ -2307,7 +2307,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>true</transparent>
-        <pv_name>$(P)PID:PROC:MEAS_IN</pv_name>
+        <pv_name>$(Sys)$(Dev)Pid:Proc:Meas-I</pv_name>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
@@ -2439,7 +2439,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>true</transparent>
-        <pv_name>$(P)PID:PROC:TGT_IN</pv_name>
+        <pv_name>$(Sys)$(Dev)Pid:Proc:Tgt-I</pv_name>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
@@ -2571,7 +2571,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>true</transparent>
-        <pv_name>$(P)PID:TS_IN</pv_name>
+        <pv_name>$(Sys)$(Dev)Pid:Ts-I</pv_name>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
@@ -2703,7 +2703,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>true</transparent>
-        <pv_name>$(P)PID:TS_NUM_IN</pv_name>
+        <pv_name>$(Sys)$(Dev)Pid:TsNum-I</pv_name>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
@@ -2835,7 +2835,7 @@ $(pv_value)</tooltip>
         <format_type>0</format_type>
         <precision_from_pv>true</precision_from_pv>
         <transparent>true</transparent>
-        <pv_name>$(P)PID:VOLTS_IN</pv_name>
+        <pv_name>$(Sys)$(Dev)Pid:Volts-I</pv_name>
         <background_color>
           <color red="255" green="255" blue="255" />
         </background_color>
