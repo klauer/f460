@@ -470,13 +470,13 @@ $(pv_value)</tooltip>
     <axis_2_minimum>0.0</axis_2_minimum>
     <trace_0_point_size>4</trace_0_point_size>
     <show_legend>false</show_legend>
-    <y>204</y>
-    <x>21</x>
+    <y>228</y>
+    <x>38</x>
     <visible>true</visible>
     <trace_0_x_pv_value />
     <axis_1_visible>true</axis_1_visible>
     <height>157</height>
-    <axis_1_maximum>100.0</axis_1_maximum>
+    <axis_1_maximum>1.0E-8</axis_1_maximum>
     <axis_1_title_font>
       <fontdata fontName="Arial" height="9" style="1" />
     </axis_1_title_font>
@@ -564,7 +564,7 @@ $(trace_0_y_pv_value)</tooltip>
     <title>I0</title>
     <axis_2_auto_scale>true</axis_2_auto_scale>
     <pv_name></pv_name>
-    <axis_1_minimum>0.0</axis_1_minimum>
+    <axis_1_minimum>1.0E-10</axis_1_minimum>
     <axis_2_axis_color>
       <color red="0" green="0" blue="0" />
     </axis_2_axis_color>
@@ -647,88 +647,6 @@ $(trace_0_y_pv_value)</tooltip>
 $(pv_value)</tooltip>
     <x>317</x>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-    <visible>true</visible>
-    <vertical_alignment>1</vertical_alignment>
-    <wuid>-5d6cab15:142d8a165be:-6f55</wuid>
-    <auto_size>true</auto_size>
-    <scripts />
-    <height>15</height>
-    <name>Label_2</name>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <transparent>true</transparent>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <widget_type>Label</widget_type>
-    <enabled>true</enabled>
-    <text>Update rate</text>
-    <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
-    </font>
-    <width>61</width>
-    <border_style>0</border_style>
-    <rules />
-    <border_width>1</border_width>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions hook="false" hook_all="false" />
-    <y>527</y>
-    <wrap_words>false</wrap_words>
-    <tooltip></tooltip>
-    <x>52</x>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <visible>true</visible>
-    <actions_from_pv>true</actions_from_pv>
-    <wuid>-5d6cab15:142d8a165be:-6f54</wuid>
-    <scripts />
-    <height>29</height>
-    <name>Menu Button_1</name>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <transparent>false</transparent>
-    <pv_name>$(Sys)$(Dev)Cmd:RdCur.SCAN</pv_name>
-    <background_color>
-      <color red="240" green="240" blue="240" />
-    </background_color>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <widget_type>Menu Button</widget_type>
-    <enabled>true</enabled>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <font>
-      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
-    </font>
-    <width>190</width>
-    <border_style>6</border_style>
-    <label></label>
-    <rules />
-    <pv_value />
-    <border_width>1</border_width>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <y>521</y>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <x>138</x>
-  </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.xyGraph" version="1.0.0">
     <trace_0_trace_color>
       <color red="21" green="21" blue="196" />
@@ -746,13 +664,13 @@ $(pv_value)</tooltip>
     <axis_2_minimum>0.0</axis_2_minimum>
     <trace_0_point_size>4</trace_0_point_size>
     <show_legend>false</show_legend>
-    <y>204</y>
-    <x>300</x>
+    <y>228</y>
+    <x>317</x>
     <visible>true</visible>
     <trace_0_x_pv_value />
     <axis_1_visible>true</axis_1_visible>
     <height>157</height>
-    <axis_1_maximum>100.0</axis_1_maximum>
+    <axis_1_maximum>1.0E-8</axis_1_maximum>
     <axis_1_title_font>
       <fontdata fontName="Arial" height="9" style="1" />
     </axis_1_title_font>
@@ -840,7 +758,7 @@ $(trace_0_y_pv_value)</tooltip>
     <title>I1</title>
     <axis_2_auto_scale>true</axis_2_auto_scale>
     <pv_name></pv_name>
-    <axis_1_minimum>0.0</axis_1_minimum>
+    <axis_1_minimum>1.0E-10</axis_1_minimum>
     <axis_2_axis_color>
       <color red="0" green="0" blue="0" />
     </axis_2_axis_color>
@@ -890,13 +808,13 @@ $(trace_0_y_pv_value)</tooltip>
     <axis_2_minimum>0.0</axis_2_minimum>
     <trace_0_point_size>4</trace_0_point_size>
     <show_legend>false</show_legend>
-    <y>360</y>
-    <x>21</x>
+    <y>384</y>
+    <x>38</x>
     <visible>true</visible>
     <trace_0_x_pv_value />
     <axis_1_visible>true</axis_1_visible>
     <height>157</height>
-    <axis_1_maximum>100.0</axis_1_maximum>
+    <axis_1_maximum>1.0E-8</axis_1_maximum>
     <axis_1_title_font>
       <fontdata fontName="Arial" height="9" style="1" />
     </axis_1_title_font>
@@ -984,7 +902,7 @@ $(trace_0_y_pv_value)</tooltip>
     <title>I2</title>
     <axis_2_auto_scale>true</axis_2_auto_scale>
     <pv_name></pv_name>
-    <axis_1_minimum>0.0</axis_1_minimum>
+    <axis_1_minimum>1.0E-10</axis_1_minimum>
     <axis_2_axis_color>
       <color red="0" green="0" blue="0" />
     </axis_2_axis_color>
@@ -1034,13 +952,13 @@ $(trace_0_y_pv_value)</tooltip>
     <axis_2_minimum>0.0</axis_2_minimum>
     <trace_0_point_size>4</trace_0_point_size>
     <show_legend>false</show_legend>
-    <y>360</y>
-    <x>300</x>
+    <y>384</y>
+    <x>317</x>
     <visible>true</visible>
     <trace_0_x_pv_value />
     <axis_1_visible>true</axis_1_visible>
     <height>157</height>
-    <axis_1_maximum>100.0</axis_1_maximum>
+    <axis_1_maximum>1.0E-8</axis_1_maximum>
     <axis_1_title_font>
       <fontdata fontName="Arial" height="9" style="1" />
     </axis_1_title_font>
@@ -1128,7 +1046,7 @@ $(trace_0_y_pv_value)</tooltip>
     <title>I3</title>
     <axis_2_auto_scale>true</axis_2_auto_scale>
     <pv_name></pv_name>
-    <axis_1_minimum>0.0</axis_1_minimum>
+    <axis_1_minimum>1.0E-10</axis_1_minimum>
     <axis_2_axis_color>
       <color red="0" green="0" blue="0" />
     </axis_2_axis_color>
@@ -1160,5 +1078,86 @@ $(trace_0_y_pv_value)</tooltip>
       <color red="200" green="200" blue="200" />
     </axis_1_grid_color>
     <trace_0_update_delay>100</trace_0_update_delay>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <visible>true</visible>
+    <vertical_alignment>1</vertical_alignment>
+    <wuid>7fb27f07:1493e5732cd:-6a9d</wuid>
+    <auto_size>true</auto_size>
+    <scripts />
+    <height>15</height>
+    <name>Label_2</name>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <transparent>true</transparent>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Label</widget_type>
+    <enabled>true</enabled>
+    <text>Single mode update rate</text>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+    </font>
+    <width>129</width>
+    <border_style>0</border_style>
+    <rules />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions hook="false" hook_all="false" />
+    <y>199</y>
+    <wrap_words>false</wrap_words>
+    <tooltip></tooltip>
+    <x>183</x>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.combo" version="1.0.0">
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <visible>true</visible>
+    <wuid>7fb27f07:1493e5732cd:-6a98</wuid>
+    <scripts />
+    <height>27</height>
+    <name>Combo</name>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>false</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <pv_name>$(Sys)$(Dev)Cmd:Single.SCAN</pv_name>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <widget_type>Combo</widget_type>
+    <enabled>true</enabled>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <font>
+      <opifont.name fontName="Segoe UI" height="9" style="0">Default</opifont.name>
+    </font>
+    <width>100</width>
+    <border_style>0</border_style>
+    <rules />
+    <pv_value />
+    <border_width>1</border_width>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <items_from_pv>true</items_from_pv>
+    <actions hook="false" hook_all="false" />
+    <y>193</y>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <x>317</x>
   </widget>
 </display>
