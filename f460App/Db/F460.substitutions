@@ -19,8 +19,8 @@ pattern {     P,     PORT,      PINI,    PREC }
 # The controller may in the future support 2 PID channels,
 # each individually configurable.
 #
-#file $(TOP)/f460App/Db/F460_pid_per_channel.template {
-#pattern {     P,     PORT,      PINI,    PREC, PID }
-#        { \$(Sys)$(Dev), \$(PORT),   $(PINI), $(PREC),   0 }
-#        { \$(Sys)$(Dev), \$(PORT),   $(PINI), $(PREC),   1 }
-#}
+# file $(TOP)/f460App/Db/F460_pid_per_channel.template {
+# pattern {     P,     PORT,      PINI,    PREC, PID }
+#         { \$(Sys)$(Dev), \$(PORT),   $(PINI), $(PREC),   0 }
+#         { \$(Sys)$(Dev), \$(PORT),   $(PINI), $(PREC),   1 }
+# }
